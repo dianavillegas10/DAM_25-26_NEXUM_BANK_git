@@ -1,0 +1,9 @@
+Bienvenido al instalador de Nexum Bank.
+
+Esta aplicación simula un entorno bancario digital desarrollado para fines académicos.
+
+Requisitos:
+- Windows 10 o superior
+- 200 MB libres en disco
+
+Pulse Siguiente para continuar.

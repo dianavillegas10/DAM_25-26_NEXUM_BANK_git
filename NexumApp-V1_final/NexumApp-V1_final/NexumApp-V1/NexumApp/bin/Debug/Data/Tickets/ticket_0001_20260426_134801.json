@@ -1,0 +1,15 @@
+{
+  "Id": 1,
+  "UsuarioId": 20,
+  "UsuarioNombre": "Tom",
+  "UsuarioEmail": "tom@nexum.com",
+  "Asunto": "ROBO",
+  "Descripcion": "HOLA ME HAN ROBADO LA TARJETA, PUEDEN DESACTIVARMELA?",
+  "Estado": "Pendiente",
+  "Prioridad": "Media",
+  "FechaCreacion": "2026-04-26T13:48:01.2848588+02:00",
+  "FechaActualizacion": "2026-04-26T14:05:31.0928569+02:00",
+  "RespuestaAdmin": "hola, ya lo hice",
+  "AdminId": 17,
+  "AdminNombre": "Laura"
+}

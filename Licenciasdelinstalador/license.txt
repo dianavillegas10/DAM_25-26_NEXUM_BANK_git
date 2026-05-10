@@ -1,0 +1,16 @@
+NEXUM BANK - LICENCIA DE USO
+
+Este software ha sido desarrollado como parte del Trabajo de Fin de Grado (TFG) correspondiente al ciclo formativo de Desarrollo de Aplicaciones Multiplataforma del Instituto Rey Fernando VI.
+
+Su uso está destinado exclusivamente a fines académicos, educativos y demostrativos.
+
+Queda prohibida su distribución, modificación o explotación comercial sin la autorización expresa de los autores.
+
+Autores:
+
+* Diana Villegas
+* Pablo Carrillo
+* Khalil Bahbah
+
+© 2026 Nexum Bank
+Todos los derechos reservados.

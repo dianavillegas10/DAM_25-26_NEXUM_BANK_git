@@ -1,0 +1,433 @@
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\logo.png
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\background.png
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\admin_banner.png
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_usuarios.png
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_reportes.png
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_transferencias.png
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_config.png
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\NexumApp.exe.config
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\NexumApp.exe
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\NexumApp.pdb
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Buffers.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.IO.Pipelines.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Memory.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.pdb
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Buffers.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.IO.Pipelines.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Memory.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.AssemblyReference.cache
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.exe.config
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.Properties.Resources.resources
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.GenerateResource.cache
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.CoreCompileInputs.cache
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.Up2Date
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.exe
+C:\Users\khali\Downloads\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.pdb
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\logo.png
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\background.png
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\admin_banner.png
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_usuarios.png
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_reportes.png
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_transferencias.png
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_config.png
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\NexumApp.exe.config
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\NexumApp.exe
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\NexumApp.pdb
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.TimeProvider.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Buffers.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.IO.Pipelines.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Memory.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Text.Json.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.ValueTuple.dll
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.pdb
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.TimeProvider.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Buffers.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.IO.Pipelines.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Memory.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Text.Json.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\bin\Debug\System.ValueTuple.xml
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.AssemblyReference.cache
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.Properties.Resources.resources
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.GenerateResource.cache
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.CoreCompileInputs.cache
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.Up2Date
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.exe
+C:\Users\diana\Downloads\NexumApp-V1--\NexumApp-V11-Completo_3\NexumApp\NexumApp-V1\NexumApp\obj\Debug\NexumApp.pdb
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\logo.png
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\background.png
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\admin_banner.png
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_usuarios.png
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_reportes.png
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_transferencias.png
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_config.png
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\NexumApp.exe.config
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\NexumApp.exe
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\NexumApp.pdb
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.TimeProvider.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Buffers.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.IO.Pipelines.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Memory.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Text.Json.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.ValueTuple.dll
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.pdb
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.TimeProvider.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Buffers.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.IO.Pipelines.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Memory.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Text.Json.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.ValueTuple.xml
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.AssemblyReference.cache
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.Properties.Resources.resources
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.GenerateResource.cache
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.CoreCompileInputs.cache
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.Up2Date
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.exe
+C:\Users\diana\Downloads\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.pdb
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\logo.png
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\background.png
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\admin_banner.png
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_usuarios.png
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_reportes.png
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_transferencias.png
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_config.png
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\NexumApp.exe.config
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\NexumApp.exe
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\NexumApp.pdb
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.TimeProvider.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\PdfSharp.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Buffers.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.IO.Pipelines.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Memory.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Text.Json.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.ValueTuple.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.pdb
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.TimeProvider.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Buffers.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.IO.Pipelines.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Memory.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Text.Json.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\System.ValueTuple.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\PdfSharp.xml
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.AssemblyReference.cache
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.Properties.Resources.resources
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.GenerateResource.cache
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.CoreCompileInputs.cache
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.Up2Date
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.exe
+C:\Users\pablo\source\repos\NexumApp-V1\NexumApp-V1\NexumApp\obj\Debug\NexumApp.pdb
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Resources\logo.png
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Resources\background.png
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Resources\admin_banner.png
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_usuarios.png
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_reportes.png
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_transferencias.png
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_config.png
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\NexumApp.exe.config
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\NexumApp.exe
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\NexumApp.pdb
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.TimeProvider.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\PdfSharp.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Buffers.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.IO.Pipelines.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Memory.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Text.Json.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.ValueTuple.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.pdb
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.TimeProvider.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Buffers.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.IO.Pipelines.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Memory.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Text.Json.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\System.ValueTuple.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\PdfSharp.xml
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.AssemblyReference.cache
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\obj\Debug\NexumApp.exe.config
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\obj\Debug\NexumApp.Properties.Resources.resources
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.GenerateResource.cache
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.CoreCompileInputs.cache
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.Up2Date
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\obj\Debug\NexumApp.exe
+C:\Users\khali\Downloads\NexumApp-V1 (1)\NexumApp-V1\NexumApp\obj\Debug\NexumApp.pdb
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Resources\logo.png
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Resources\background.png
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Resources\admin_banner.png
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_usuarios.png
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_reportes.png
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_transferencias.png
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Resources\icon_config.png
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\NexumApp.exe.config
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\NexumApp.exe
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\NexumApp.pdb
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.TimeProvider.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\PdfSharp.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Buffers.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.IO.Pipelines.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Memory.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Text.Json.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.ValueTuple.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.pdb
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Google.Protobuf.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Bcl.TimeProvider.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Buffers.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.IO.Pipelines.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Memory.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Text.Json.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\System.ValueTuple.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\PdfSharp.xml
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.AssemblyReference.cache
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\obj\Debug\NexumApp.exe.config
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\obj\Debug\NexumApp.Properties.Resources.resources
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.GenerateResource.cache
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.CoreCompileInputs.cache
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\obj\Debug\NexumApp.csproj.Up2Date
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\obj\Debug\NexumApp.exe
+C:\Users\khali\Downloads\NexumApp-V1_final\NexumApp-V1\NexumApp\obj\Debug\NexumApp.pdb

@@ -1,0 +1,15 @@
+{
+  "Id": 3,
+  "UsuarioId": 20,
+  "UsuarioNombre": "Tom",
+  "UsuarioEmail": "tom@nexum.com",
+  "Asunto": "hdhf",
+  "Descripcion": "sdsdff",
+  "Estado": "Pendiente",
+  "Prioridad": "Media",
+  "FechaCreacion": "2026-04-27T17:01:57.7686749+02:00",
+  "FechaActualizacion": null,
+  "RespuestaAdmin": null,
+  "AdminId": null,
+  "AdminNombre": null
+}

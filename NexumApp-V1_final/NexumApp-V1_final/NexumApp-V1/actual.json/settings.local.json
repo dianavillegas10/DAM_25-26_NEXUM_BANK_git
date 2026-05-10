@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /c/Users/pablo/source/repos/NexumApp-V1/NexumApp/Forms/*/)",
+      "Bash(xargs grep:*)",
+      "Bash(ls -la /c/Users/pablo/source/repos/NexumApp-V1/NexumApp/Views/*.cs)",
+      "Read(//c/Users/pablo/source/repos/NexumApp-V1/**)",
+      "Bash(grep \"\\\\.cs$\")",
+      "Bash(powershell -Command \"& 'C:\\\\\\\\Program Files\\\\\\\\Microsoft Visual Studio\\\\\\\\2022\\\\\\\\Community\\\\\\\\MSBuild\\\\\\\\Current\\\\\\\\Bin\\\\\\\\MSBuild.exe' 'c:\\\\\\\\Users\\\\\\\\pablo\\\\\\\\source\\\\\\\\repos\\\\\\\\NexumApp-V1\\\\\\\\NexumApp\\\\\\\\NexumApp.csproj' /p:Configuration=Debug /t:Build /v:minimal 2>&1\")"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "Id": 2,
+  "UsuarioId": 20,
+  "UsuarioNombre": "Tom",
+  "UsuarioEmail": "tom@nexum.com",
+  "Asunto": "ayuda",
+  "Descripcion": "no puedo sacar dinero",
+  "Estado": "Pendiente",
+  "Prioridad": "Baja",
+  "FechaCreacion": "2026-04-27T16:52:16.8958751+02:00",
+  "FechaActualizacion": null,
+  "RespuestaAdmin": null,
+  "AdminId": null,
+  "AdminNombre": null
+}

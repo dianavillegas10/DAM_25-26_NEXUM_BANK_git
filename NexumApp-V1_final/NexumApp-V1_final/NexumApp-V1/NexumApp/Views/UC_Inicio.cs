@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
+using System.Linq;
 using System.Windows.Forms;
 using static NexumApp.Helpers.DashboardLayout;
 
@@ -36,7 +37,7 @@ namespace NexumApp.Views
 
         // Datos para el donut del presupuesto (se actualizan en LoadPresupuesto)
         private float _donutIngresos = 0f;
-        private float _donutGastos   = 0f;
+        private float _donutGastos = 0f;
         private Panel _donutPanel;
 
         // Controles de la tarjeta principal (se actualizan con la cuenta activa)
@@ -44,9 +45,10 @@ namespace NexumApp.Views
         private Label _lblTarjetaTitular;
         private Label _lblTarjetaVencimiento;
         private Label _lblTarjetaTipo;
-        // _tlpMiniTarjetas eliminado: reemplazado por botones de acción (CrearAccionesTarjeta)
-        private List<CuentaBancaria> _cuentasParaTarjeta  = new List<CuentaBancaria>();
-        private List<Tarjeta>        _tarjetasActuales    = new List<Tarjeta>();
+        private Label _lblTarjetaCuentaAsociada;  // ← NUEVO: label para mostrar cuenta asociada
+        private int _cuentaActivaId = 0;  // ← NUEVO: guarda el ID de la cuenta activa
+        private List<CuentaBancaria> _cuentasParaTarjeta = new List<CuentaBancaria>();
+        private List<Tarjeta> _tarjetasActuales = new List<Tarjeta>();
 
         public event EventHandler TarjetasVerTodoClicked;
         public event EventHandler HuchaCreada;
@@ -212,17 +214,20 @@ namespace NexumApp.Views
 
             var tlpBtns = new TableLayoutPanel
             {
-                Dock = DockStyle.Fill, ColumnCount = 1, RowCount = 2,
-                Padding = new Padding(0), BackColor = Color.Transparent
+                Dock = DockStyle.Fill,
+                ColumnCount = 1,
+                RowCount = 2,
+                Padding = new Padding(0),
+                BackColor = Color.Transparent
             };
             tlpBtns.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tlpBtns.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
 
-            var btnEnviar  = CrearBotonAccionRapida("Enviar dinero",  "enviar",  (s, ev) => EnviarDineroClicked?.Invoke(this, EventArgs.Empty));
+            var btnEnviar = CrearBotonAccionRapida("Enviar dinero", "enviar", (s, ev) => EnviarDineroClicked?.Invoke(this, EventArgs.Empty));
             var btnRecibir = CrearBotonAccionRapida("Recibir dinero", "recibir", (s, ev) => RecibirDineroClicked?.Invoke(this, EventArgs.Empty));
-            btnEnviar.Dock  = DockStyle.Fill; btnEnviar.Margin  = new Padding(0, 6, 0, 4);
+            btnEnviar.Dock = DockStyle.Fill; btnEnviar.Margin = new Padding(0, 6, 0, 4);
             btnRecibir.Dock = DockStyle.Fill; btnRecibir.Margin = new Padding(0, 4, 0, 6);
-            tlpBtns.Controls.Add(btnEnviar,  0, 0);
+            tlpBtns.Controls.Add(btnEnviar, 0, 0);
             tlpBtns.Controls.Add(btnRecibir, 0, 1);
 
             tlp.Controls.Add(flpIzq, 0, 0);
@@ -259,9 +264,9 @@ namespace NexumApp.Views
             };
             for (int i = 0; i < items.Length; i++)
             {
-                var idx  = i;
+                var idx = i;
                 var item = CrearItemAcceso(items[i].Item1, items[i].Item2, items[i].Item3, items[i].Item4);
-                item.Dock   = DockStyle.Fill;
+                item.Dock = DockStyle.Fill;
                 item.Margin = new Padding(4, 2, 4, 2);
                 EventHandler clickHandler = (s, ev) => AccesoRapidoClicked?.Invoke(this, idx);
                 PropagateClickRecursivo(item, clickHandler);
@@ -302,9 +307,9 @@ namespace NexumApp.Views
             {
                 e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
                 Color cirBg = pressed
-                    ? Color.FromArgb(Math.Max(0,bgColor.R-20), Math.Max(0,bgColor.G-20), Math.Max(0,bgColor.B-20))
+                    ? Color.FromArgb(Math.Max(0, bgColor.R - 20), Math.Max(0, bgColor.G - 20), Math.Max(0, bgColor.B - 20))
                     : hovered
-                    ? Color.FromArgb(Math.Max(0,bgColor.R-12), Math.Max(0,bgColor.G-12), Math.Max(0,bgColor.B-12))
+                    ? Color.FromArgb(Math.Max(0, bgColor.R - 12), Math.Max(0, bgColor.G - 12), Math.Max(0, bgColor.B - 12))
                     : bgColor;
                 using (var path = UiHelper.CrearRoundedRect(circ.ClientRectangle, CIRC / 2))
                     e.Graphics.FillPath(new SolidBrush(cirBg), path);
@@ -317,13 +322,13 @@ namespace NexumApp.Views
             // Texto centrado debajo
             var lbl = new Label
             {
-                Text      = texto,
-                Font      = new Font("Segoe UI", 9.5f, FontStyle.Bold),
+                Text = texto,
+                Font = new Font("Segoe UI", 9.5f, FontStyle.Bold),
                 ForeColor = TextoOscuro,
                 BackColor = Color.Transparent,
                 TextAlign = ContentAlignment.MiddleCenter,
-                AutoSize  = false,
-                Cursor    = Cursors.Hand
+                AutoSize = false,
+                Cursor = Cursors.Hand
             };
 
             p.Controls.Add(circ);
@@ -335,23 +340,23 @@ namespace NexumApp.Views
                 int w = p.Width, h = p.Height;
                 int topPad = Math.Max(6, (h - CIRC - 22) / 2);
                 circ.Location = new Point((w - CIRC) / 2, topPad);
-                lbl.Location  = new Point(4, circ.Bottom + 5);
-                lbl.Size      = new Size(w - 8, 20);
+                lbl.Location = new Point(4, circ.Bottom + 5);
+                lbl.Size = new Size(w - 8, 20);
             };
 
             // Hover + pressed: propagar a todos los controles hijos
-            EventHandler enter = (s, e) => { hovered = true;  p.Invalidate(true); circ.Invalidate(); };
+            EventHandler enter = (s, e) => { hovered = true; p.Invalidate(true); circ.Invalidate(); };
             EventHandler leave = (s, e) => { hovered = false; pressed = false; p.Invalidate(true); circ.Invalidate(); };
-            MouseEventHandler down  = (s, e) => { pressed = true;  p.Invalidate(true); circ.Invalidate(); };
-            MouseEventHandler up    = (s, e) => { pressed = false; p.Invalidate(true); circ.Invalidate(); };
+            MouseEventHandler down = (s, e) => { pressed = true; p.Invalidate(true); circ.Invalidate(); };
+            MouseEventHandler up = (s, e) => { pressed = false; p.Invalidate(true); circ.Invalidate(); };
 
             foreach (var ctrl in new Control[] { p, circ, lbl })
             {
                 ctrl.MouseEnter += enter;
                 ctrl.MouseLeave += leave;
-                ctrl.MouseDown  += down;
-                ctrl.MouseUp    += up;
-                ctrl.Cursor      = Cursors.Hand;
+                ctrl.MouseDown += down;
+                ctrl.MouseUp += up;
+                ctrl.Cursor = Cursors.Hand;
             }
 
             return p;
@@ -360,8 +365,8 @@ namespace NexumApp.Views
         // Propaga el click a TODOS los controles hijos de forma recursiva
         private static void PropagateClickRecursivo(Control ctrl, EventHandler handler)
         {
-            ctrl.Click  += handler;
-            ctrl.Cursor  = Cursors.Hand;
+            ctrl.Click += handler;
+            ctrl.Cursor = Cursors.Hand;
             foreach (Control c in ctrl.Controls)
                 PropagateClickRecursivo(c, handler);
         }
@@ -420,7 +425,7 @@ namespace NexumApp.Views
             headerNovedades.Paint += (s, e) =>
             {
                 var g = e.Graphics;
-                g.SmoothingMode     = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
                 g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
                 // Barra izquierda degradada
@@ -525,7 +530,7 @@ namespace NexumApp.Views
                 if (total > 0)
                 {
                     float angIngreso = 360f * (_donutIngresos / total);
-                    float angGasto   = 360f * (_donutGastos   / total);
+                    float angGasto = 360f * (_donutGastos / total);
                     // Arco ingresos (verde)
                     using (var pen = new Pen(Color.FromArgb(16, 185, 129), 12) { StartCap = System.Drawing.Drawing2D.LineCap.Round, EndCap = System.Drawing.Drawing2D.LineCap.Round })
                         e.Graphics.DrawArc(pen, rect, -90, angIngreso);
@@ -618,13 +623,13 @@ namespace NexumApp.Views
         }
 
         // Campos para el status bar y botón de bloquear (actualizables desde LoadTarjetas)
-        private Label  _lblTarjetaEstado;
-        private Label  _lblTarjetaLimite;
-        private Panel  _pnlAccionesTarjeta;
+        private Label _lblTarjetaEstado;
+        private Label _lblTarjetaLimite;
+        private Panel _pnlAccionesTarjeta;
 
         private Panel CrearPanelTarjetas()
         {
-            var section = CrearSectionContainer(356, SectionSpacing);
+            var section = CrearSectionContainer(370, SectionSpacing); // Aumentado ligeramente para el nuevo label
             var pnl = new Panel { Dock = DockStyle.Fill, BackColor = Color.FromArgb(18, 22, 40), Padding = new Padding(SectionPadding) };
             pnl.Paint += (s, e) =>
             {
@@ -635,13 +640,14 @@ namespace NexumApp.Views
                 }
             };
 
-            var tlp = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 1, RowCount = 6 };
+            var tlp = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 1, RowCount = 7 }; // Aumentado a 7 filas
             tlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 30));  // 0: Header
             tlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 150)); // 1: Tarjeta grande
-            tlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 44));  // 2: Acciones rápidas
-            tlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 28));  // 3: Status bar
-            tlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 38));  // 4: Botón nueva cuenta
-            tlp.RowStyles.Add(new RowStyle(SizeType.Percent, 100F)); // 5: Relleno
+            tlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 22));  // 2: Cuenta asociada (NUEVA)
+            tlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 44));  // 3: Acciones rápidas
+            tlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 28));  // 4: Status bar
+            tlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 38));  // 5: Botón nueva cuenta
+            tlp.RowStyles.Add(new RowStyle(SizeType.Percent, 100F)); // 6: Relleno
 
             // Fila 0 — Cabecera
             var tlpHead = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 2, RowCount = 1, BackColor = Color.Transparent };
@@ -678,10 +684,10 @@ namespace NexumApp.Views
             };
 
             // Cargar datos reales desde tabla tarjetas
-            string numeroInicial  = "•••• •••• •••• ••••";
+            string numeroInicial = "•••• •••• •••• ••••";
             string titularInicial = SesionActual.Instancia?.Usuario?.NombreCompleto?.ToUpper() ?? "TITULAR";
-            string vencInicial    = "••/••";
-            string tipoInicial    = "SIN TARJETA";
+            string vencInicial = "••/••";
+            string tipoInicial = "SIN TARJETA";
 
             if (SesionActual.Instancia?.Usuario != null)
             {
@@ -694,8 +700,8 @@ namespace NexumApp.Views
                         _tarjetasActuales = tarjetas;
                         var principal = tarjetas.Find(t => t.EsPrincipal) ?? tarjetas[0];
                         numeroInicial = FormatearNumeroTarjeta(principal.NumeroTarjeta);
-                        vencInicial   = principal.FechaCaducidad.ToString("MM/yy");
-                        tipoInicial   = (principal.TipoTarjeta ?? "DÉBITO").ToUpper();
+                        vencInicial = principal.FechaCaducidad.ToString("MM/yy");
+                        tipoInicial = (principal.TipoTarjeta ?? "DÉBITO").ToUpper();
                         titularInicial = principal.NombreTitular;
                     }
                 }
@@ -737,17 +743,35 @@ namespace NexumApp.Views
 
             tlp.Controls.Add(mainCard, 0, 1);
 
-            // ── Fila 2 — Acciones rápidas ────────────────────────
-            _pnlAccionesTarjeta = CrearAccionesTarjeta();
-            tlp.Controls.Add(_pnlAccionesTarjeta, 0, 2);
+            // ── Fila 2 — Cuenta asociada (NUEVO) ─────────────────────
+            var pnlCuentaAsociada = new Panel { Dock = DockStyle.Fill, BackColor = Color.Transparent };
+            _lblTarjetaCuentaAsociada = new Label
+            {
+                Name = "lblTarjetaCuentaAsociada",
+                Text = "🏦 Cargando cuenta...",
+                Font = new Font("Segoe UI", 8f),
+                ForeColor = Color.FromArgb(150, 175, 210),
+                BackColor = Color.Transparent,
+                AutoSize = true,
+                Location = new Point(8, 6)
+            };
+            pnlCuentaAsociada.Controls.Add(_lblTarjetaCuentaAsociada);
+            pnlCuentaAsociada.Resize += (s, e) =>
+            {
+                _lblTarjetaCuentaAsociada.Location = new Point(8, (pnlCuentaAsociada.Height - _lblTarjetaCuentaAsociada.Height) / 2);
+            };
+            tlp.Controls.Add(pnlCuentaAsociada, 0, 2);
 
-            // ── Fila 3 — Status bar ───────────────────────────────
+            // ── Fila 3 — Acciones rápidas ────────────────────────
+            _pnlAccionesTarjeta = CrearAccionesTarjeta();
+            tlp.Controls.Add(_pnlAccionesTarjeta, 0, 3);
+
+            // ── Fila 4 — Status bar ───────────────────────────────
             var pnlStatus = new Panel { Dock = DockStyle.Fill, BackColor = Color.Transparent };
             var tarjetaRef = _tarjetasActuales?.Count > 0
-                ? (_tarjetasActuales.Find(t => t.EsPrincipal) ?? _tarjetasActuales[0])
+                ? ObtenerTarjetaPorCuentaActiva() ?? (_tarjetasActuales.Find(t => t.EsPrincipal) ?? _tarjetasActuales[0])
                 : null;
 
-            bool estaActiva = tarjetaRef != null && tarjetaRef.Activa && !tarjetaRef.Bloqueada;
             string estadoTxt = tarjetaRef == null ? "Sin tarjeta"
                 : tarjetaRef.Bloqueada ? "🔒 Bloqueada"
                 : "● Activa";
@@ -757,12 +781,12 @@ namespace NexumApp.Views
 
             _lblTarjetaEstado = new Label
             {
-                Text      = estadoTxt,
-                Font      = new Font("Segoe UI", 8.5f, FontStyle.Bold),
+                Text = estadoTxt,
+                Font = new Font("Segoe UI", 8.5f, FontStyle.Bold),
                 ForeColor = estadoClr,
                 BackColor = Color.Transparent,
-                AutoSize  = true,
-                Location  = new Point(2, 6)
+                AutoSize = true,
+                Location = new Point(2, 6)
             };
 
             string limiteTxt = tarjetaRef != null
@@ -770,12 +794,12 @@ namespace NexumApp.Views
                 : "";
             _lblTarjetaLimite = new Label
             {
-                Text      = limiteTxt,
-                Font      = new Font("Segoe UI", 8f),
+                Text = limiteTxt,
+                Font = new Font("Segoe UI", 8f),
                 ForeColor = Color.FromArgb(120, 145, 185),
                 BackColor = Color.Transparent,
-                AutoSize  = true,
-                Location  = new Point(2, 6)
+                AutoSize = true,
+                Location = new Point(2, 6)
             };
 
             pnlStatus.Controls.Add(_lblTarjetaEstado);
@@ -786,9 +810,9 @@ namespace NexumApp.Views
                 _lblTarjetaLimite.Location = new Point(pnlStatus.Width - _lblTarjetaLimite.Width - 4,
                     (pnlStatus.Height - _lblTarjetaLimite.Height) / 2);
             };
-            tlp.Controls.Add(pnlStatus, 0, 3);
+            tlp.Controls.Add(pnlStatus, 0, 4);
 
-            // ── Fila 4 — Botón abrir nueva cuenta ────────────────
+            // ── Fila 5 — Botón abrir nueva cuenta ────────────────
             var btnAnadir = new Panel { Dock = DockStyle.Fill, Cursor = Cursors.Hand, BackColor = Color.Transparent, Margin = new Padding(0, 2, 0, 0) };
             btnAnadir.Paint += (s, e) =>
             {
@@ -811,12 +835,12 @@ namespace NexumApp.Views
                     {
                         try { _tarjetasActuales = new Services.TarjetaService().ObtenerTarjetasPorUsuario(SesionActual.Instancia.Usuario.Id) ?? new List<Tarjeta>(); } catch { }
                         try { _cuentasParaTarjeta = new Services.CuentaService().ObtenerCuentasPorUsuario(SesionActual.Instancia.Usuario.Id) ?? new List<CuentaBancaria>(); } catch { }
-                        ActualizarTarjetaPrincipal();
+                        ActualizarTarjetaPorCuentaActiva();
                         ActualizarAccionesTarjeta();
                     }
                 }
             };
-            tlp.Controls.Add(btnAnadir, 0, 4);
+            tlp.Controls.Add(btnAnadir, 0, 5);
 
             pnl.Controls.Add(tlp);
             section.Controls.Add(pnl);
@@ -844,50 +868,148 @@ namespace NexumApp.Views
         public void LoadTarjetas(List<Tarjeta> tarjetas)
         {
             _tarjetasActuales = tarjetas ?? new List<Tarjeta>();
-            ActualizarTarjetaPrincipal();
+            ActualizarTarjetaPorCuentaActiva();
             ActualizarAccionesTarjeta();
         }
 
-        private void ActualizarTarjetaPrincipal()
+        // NUEVO: Obtiene la tarjeta asociada a la cuenta activa actual
+        private Tarjeta ObtenerTarjetaPorCuentaActiva()
+        {
+            if (_tarjetasActuales == null || _tarjetasActuales.Count == 0)
+                return null;
+
+            if (_cuentaActivaId > 0)
+            {
+                var tarjeta = _tarjetasActuales.FirstOrDefault(t => t.CuentaId == _cuentaActivaId);
+                if (tarjeta != null)
+                    return tarjeta;
+            }
+
+            // Si no hay tarjeta para esta cuenta, devolver la principal o la primera
+            return _tarjetasActuales.Find(t => t.EsPrincipal) ?? _tarjetasActuales[0];
+        }
+
+        // NUEVO: Actualiza la tarjeta mostrada según la cuenta activa
+        private void ActualizarTarjetaPorCuentaActiva()
         {
             if (_lblTarjetaNumero == null) return;
-            if (_tarjetasActuales != null && _tarjetasActuales.Count > 0)
+
+            var tarjeta = ObtenerTarjetaPorCuentaActiva();
+
+            if (tarjeta != null)
             {
-                var t = _tarjetasActuales.Find(x => x.EsPrincipal) ?? _tarjetasActuales[0];
-                _lblTarjetaNumero.Text      = FormatearNumeroTarjeta(t.NumeroTarjeta);
-                _lblTarjetaTitular.Text     = t.NombreTitular;
-                _lblTarjetaVencimiento.Text = t.FechaCaducidad.ToString("MM/yy");
-                _lblTarjetaTipo.Text        = (t.TipoTarjeta ?? "DÉBITO").ToUpper();
+                _lblTarjetaNumero.Text = FormatearNumeroTarjeta(tarjeta.NumeroTarjeta);
+                _lblTarjetaTitular.Text = tarjeta.NombreTitular;
+                _lblTarjetaVencimiento.Text = tarjeta.FechaCaducidad.ToString("MM/yy");
+                _lblTarjetaTipo.Text = (tarjeta.TipoTarjeta ?? "DÉBITO").ToUpper();
+
+                // Actualizar status bar
+                if (_lblTarjetaEstado != null)
+                {
+                    _lblTarjetaEstado.Text = tarjeta.Bloqueada ? "🔒 Bloqueada" : "● Activa";
+                    _lblTarjetaEstado.ForeColor = tarjeta.Bloqueada
+                        ? Color.FromArgb(239, 68, 68)
+                        : Color.FromArgb(52, 211, 153);
+                }
+
+                if (_lblTarjetaLimite != null)
+                {
+                    var es = AppSettings.CultureMoneda;
+                    _lblTarjetaLimite.Text = $"Límite diario {tarjeta.LimiteDiario.ToString("C0", es)}  ·  Mensual {tarjeta.LimiteMensual.ToString("C0", es)}";
+                }
             }
             else
             {
-                _lblTarjetaNumero.Text      = "•••• •••• •••• ••••";
-                _lblTarjetaTitular.Text     = SesionActual.Instancia?.Usuario?.NombreCompleto?.ToUpper() ?? "TITULAR";
+                _lblTarjetaNumero.Text = "•••• •••• •••• ••••";
+                _lblTarjetaTitular.Text = SesionActual.Instancia?.Usuario?.NombreCompleto?.ToUpper() ?? "TITULAR";
                 _lblTarjetaVencimiento.Text = "••/••";
-                _lblTarjetaTipo.Text        = "SIN TARJETA";
+                _lblTarjetaTipo.Text = "SIN TARJETA";
+
+                if (_lblTarjetaEstado != null)
+                {
+                    _lblTarjetaEstado.Text = "Sin tarjeta";
+                    _lblTarjetaEstado.ForeColor = Color.FromArgb(100, 116, 139);
+                }
+
+                if (_lblTarjetaLimite != null)
+                {
+                    _lblTarjetaLimite.Text = "Solicita una tarjeta";
+                }
+            }
+
+            // Actualizar el label de cuenta asociada
+            ActualizarInfoCuentaAsociada();
+        }
+
+        // NUEVO: Actualiza el label que muestra la cuenta asociada
+        private void ActualizarInfoCuentaAsociada()
+        {
+            if (_lblTarjetaCuentaAsociada == null) return;
+
+            var cuentaActiva = _cuentasParaTarjeta?.FirstOrDefault(c => c.Id == _cuentaActivaId);
+            var tarjetaAsociada = ObtenerTarjetaPorCuentaActiva();
+
+            if (cuentaActiva != null && tarjetaAsociada != null)
+            {
+                string ibanFormateado = FormatearCorto(cuentaActiva.NumeroCuenta);
+                _lblTarjetaCuentaAsociada.Text = $"🏦 Vinculada a cuenta: {ibanFormateado} • {cuentaActiva.TipoCuenta ?? "Cuenta"}";
+                _lblTarjetaCuentaAsociada.ForeColor = Color.FromArgb(150, 175, 210);
+            }
+            else if (cuentaActiva != null)
+            {
+                string ibanFormateado = FormatearCorto(cuentaActiva.NumeroCuenta);
+                _lblTarjetaCuentaAsociada.Text = $"🏦 Cuenta: {ibanFormateado} (sin tarjeta asociada)";
+                _lblTarjetaCuentaAsociada.ForeColor = Color.FromArgb(239, 158, 11);
+            }
+            else if (tarjetaAsociada != null && tarjetaAsociada.CuentaId > 0)
+            {
+                _lblTarjetaCuentaAsociada.Text = "⚠️ Cuenta no encontrada";
+                _lblTarjetaCuentaAsociada.ForeColor = Color.FromArgb(239, 68, 68);
+            }
+            else
+            {
+                _lblTarjetaCuentaAsociada.Text = "🏦 Sin cuenta vinculada";
+                _lblTarjetaCuentaAsociada.ForeColor = Color.FromArgb(150, 175, 210);
             }
         }
 
-        // ActualizarMiniTarjetas eliminado: sustituido por ActualizarAccionesTarjeta
+        // ActualizarTarjetaPrincipal se mantiene por compatibilidad pero usa el nuevo método
+        private void ActualizarTarjetaPrincipal()
+        {
+            ActualizarTarjetaPorCuentaActiva();
+        }
+
+        private void ActualizarInformacionTarjeta(CuentaBancaria cuenta)
+        {
+            if (cuenta == null) return;
+
+            // Aquí es donde "se ven" los cambios
+            _lblTarjetaNumero.Text = cuenta.NumeroCuenta; // O el número de tarjeta asociado
+            _lblTarjetaCuentaAsociada.Text = cuenta.TipoCuenta;
+            _saldoActual = cuenta.Saldo;
+
+          
+
+            // Forzar al panel a redibujarse si tiene gráficos personalizados
+            panelSaldo.Invalidate();
+        }
 
         // ── Acciones rápidas de tarjeta ───────────────────────────
         private Panel CrearAccionesTarjeta()
         {
             var pnl = new TableLayoutPanel
             {
-                Dock        = DockStyle.Fill,
+                Dock = DockStyle.Fill,
                 ColumnCount = 3,
-                RowCount    = 1,
-                BackColor   = Color.Transparent,
-                Margin      = new Padding(0, 6, 0, 0)
+                RowCount = 1,
+                BackColor = Color.Transparent,
+                Margin = new Padding(0, 6, 0, 0)
             };
             pnl.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
             pnl.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
             pnl.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
 
-            var tarjeta = _tarjetasActuales?.Count > 0
-                ? (_tarjetasActuales.Find(t => t.EsPrincipal) ?? _tarjetasActuales[0])
-                : null;
+            var tarjeta = ObtenerTarjetaPorCuentaActiva();
 
             bool bloq = tarjeta?.Bloqueada == true;
 
@@ -904,7 +1026,7 @@ namespace NexumApp.Views
                     if (ok)
                     {
                         try { _tarjetasActuales = svc.ObtenerTarjetasPorUsuario(SesionActual.Instancia.Usuario.Id); } catch { }
-                        ActualizarTarjetaPrincipal();
+                        ActualizarTarjetaPorCuentaActiva();
                         ActualizarAccionesTarjeta();
                     }
                 }), 0, 0);
@@ -929,7 +1051,7 @@ namespace NexumApp.Views
             var btn = new Panel { Dock = DockStyle.Fill, Cursor = Cursors.Hand, BackColor = Color.Transparent, Margin = new Padding(2, 0, 2, 0) };
             bool hov = false;
             Color bgNormal = Color.FromArgb(22, clr.R, clr.G, clr.B);
-            Color bgHov    = Color.FromArgb(38, clr.R, clr.G, clr.B);
+            Color bgHov = Color.FromArgb(38, clr.R, clr.G, clr.B);
 
             btn.Paint += (s, e) =>
             {
@@ -941,9 +1063,9 @@ namespace NexumApp.Views
                 g.DrawString(ico, new Font("Segoe UI Emoji", 11), new SolidBrush(clr), new RectangleF(0, 2, r.Width, r.Height / 2f), sfC);
                 g.DrawString(txt, new Font("Segoe UI", 7.5f, FontStyle.Bold), new SolidBrush(clr), new RectangleF(0, r.Height / 2f - 2, r.Width, r.Height / 2f), sfC);
             };
-            btn.MouseEnter += (s, e) => { hov = true;  btn.Invalidate(); };
+            btn.MouseEnter += (s, e) => { hov = true; btn.Invalidate(); };
             btn.MouseLeave += (s, e) => { hov = false; btn.Invalidate(); };
-            btn.Click      += (s, e) => onClick();
+            btn.Click += (s, e) => onClick();
             return btn;
         }
 
@@ -958,13 +1080,11 @@ namespace NexumApp.Views
             ((System.Windows.Forms.TableLayoutPanel)parent).Controls.Add(_pnlAccionesTarjeta, 0, idx);
 
             // Actualizar también el status bar
-            var tarjeta = _tarjetasActuales?.Count > 0
-                ? (_tarjetasActuales.Find(t => t.EsPrincipal) ?? _tarjetasActuales[0])
-                : null;
+            var tarjeta = ObtenerTarjetaPorCuentaActiva();
             if (_lblTarjetaEstado != null)
             {
-                _lblTarjetaEstado.Text      = tarjeta?.Bloqueada == true ? "🔒 Bloqueada" : "● Activa";
-                _lblTarjetaEstado.ForeColor = tarjeta?.Bloqueada == true ? Color.FromArgb(239, 68, 68) : Color.FromArgb(52, 211, 153);
+                _lblTarjetaEstado.Text = tarjeta?.Bloqueada == true ? "🔒 Bloqueada" : tarjeta != null ? "● Activa" : "Sin tarjeta";
+                _lblTarjetaEstado.ForeColor = tarjeta?.Bloqueada == true ? Color.FromArgb(239, 68, 68) : tarjeta != null ? Color.FromArgb(52, 211, 153) : Color.FromArgb(100, 116, 139);
             }
             if (_lblTarjetaLimite != null && tarjeta != null)
             {
@@ -973,59 +1093,12 @@ namespace NexumApp.Views
             }
         }
 
-        private Panel CrearMiniTarjetaVacia()
-        {
-            var wrapper = new Panel { Dock = DockStyle.Fill, Margin = new Padding(0, 0, 6, 0), BackColor = Color.Transparent };
-            var card = new Panel { Dock = DockStyle.Top, Height = 60 };
-            card.Paint += (s, e) =>
-            {
-                e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                using (var path = UiHelper.CrearRoundedRect(card.ClientRectangle, 8))
-                {
-                    e.Graphics.FillPath(new SolidBrush(Color.FromArgb(30, 35, 60)), path);
-                    using (var pen = new System.Drawing.Pen(Color.FromArgb(60, 147, 171, 255), 1f) { DashStyle = System.Drawing.Drawing2D.DashStyle.Dash })
-                        e.Graphics.DrawPath(pen, path);
-                }
-                var fmt = new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center };
-                e.Graphics.DrawString("+", new Font("Segoe UI", 16), new SolidBrush(Color.FromArgb(80, 147, 171, 255)), card.ClientRectangle, fmt);
-            };
-            var lblNombre = new Label { Text = "Vacía", ForeColor = Color.FromArgb(80, 147, 171, 255), Font = new Font("Segoe UI", 8.5F), AutoSize = true, Margin = new Padding(2, 2, 0, 0) };
-            wrapper.Controls.Add(lblNombre);
-            wrapper.Controls.Add(card);
-            return wrapper;
-        }
-
-        private Panel CrearMiniTarjeta(string nombre, string numeroCorto, Color c1, Color c2)
-        {
-            var wrapper = new Panel { Dock = DockStyle.Fill, Margin = new Padding(0, 0, 6, 0), BackColor = Color.Transparent };
-            var card = new Panel { Dock = DockStyle.Top, Height = 60 };
-            card.Paint += (s, e) =>
-            {
-                using (var path = UiHelper.CrearRoundedRect(card.ClientRectangle, 8))
-                using (var brush = new System.Drawing.Drawing2D.LinearGradientBrush(card.ClientRectangle.IsEmpty ? new Rectangle(0, 0, 1, 1) : card.ClientRectangle, c1, c2, 30f))
-                {
-                    e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                    e.Graphics.FillPath(brush, path);
-                    using (var shine = new SolidBrush(Color.FromArgb(20, 255, 255, 255)))
-                        e.Graphics.FillEllipse(shine, card.Width - 30, -15, 55, 40);
-                }
-            };
-            card.Controls.Add(new Label { Text = "••", ForeColor = Color.FromArgb(200, 255, 255, 255), Font = new Font("Segoe UI", 8), AutoSize = true, Location = new Point(8, 40) });
-            card.Controls.Add(new Label { Text = numeroCorto.Replace("••", ""), ForeColor = Color.White, Font = new Font("Segoe UI", 8, FontStyle.Bold), AutoSize = true, Location = new Point(20, 40) });
-
-            var lblNombre = new Label { Text = nombre, ForeColor = Color.FromArgb(180, 200, 230), Font = new Font("Segoe UI", 8.5F), AutoSize = true, Margin = new Padding(2, 2, 0, 0) };
-
-            wrapper.Controls.Add(lblNombre);
-            wrapper.Controls.Add(card);
-            return wrapper;
-        }
-
         // ══════════════════════════════════════════════════════════════
         //  HUCHAS DIGITALES — datos demo (se conectará a BD en siguiente sprint)
         // ══════════════════════════════════════════════════════════════
         // Lista de huchas y referencia al panel para reconstruirlo
-        private List<Hucha> _huchasActuales       = new List<Hucha>();
-        private Panel       _panelHuchasContainer = null;
+        private List<Hucha> _huchasActuales = new List<Hucha>();
+        private Panel _panelHuchasContainer = null;
 
         public void LoadHuchas(List<Hucha> huchas)
         {
@@ -1037,8 +1110,8 @@ namespace NexumApp.Views
             var parent = _panelHuchasContainer.Parent;
             int idx = parent.Controls.GetChildIndex(_panelHuchasContainer);
             parent.Controls.Remove(_panelHuchasContainer);
-            _panelHuchasContainer           = CrearPanelHuchas();
-            _panelHuchasContainer.Dock      = DockStyle.Top;
+            _panelHuchasContainer = CrearPanelHuchas();
+            _panelHuchasContainer.Dock = DockStyle.Top;
             parent.Controls.Add(_panelHuchasContainer);
             parent.Controls.SetChildIndex(_panelHuchasContainer, idx);
         }
@@ -1055,7 +1128,7 @@ namespace NexumApp.Views
                 ? huchasOrdenadas.GetRange(0, MAX_DASHBOARD)
                 : huchasOrdenadas;
 
-            int count  = Math.Max(1, huchas.Count);
+            int count = Math.Max(1, huchas.Count);
             int totalH = PAD + 36 + GAP + count * (CARD_H + GAP) + PAD;
 
             var section = CrearSectionContainer(totalH, SectionSpacing);
@@ -1077,7 +1150,7 @@ namespace NexumApp.Views
             pnl.Resize += (s, e) =>
             {
                 inner.Width = Math.Max(100, pnl.ClientSize.Width - PAD * 2);
-                inner.Left  = PAD; inner.Top = PAD;
+                inner.Left = PAD; inner.Top = PAD;
                 foreach (Control c in inner.Controls) c.Width = inner.Width;
             };
 
@@ -1087,8 +1160,8 @@ namespace NexumApp.Views
             var hdrPanel = new Panel { Location = new Point(0, y), Height = 36, BackColor = Color.Transparent };
             // Título con emoji via Label (renderiza correctamente)
             var lIcoHdr = new Label { Text = "🐷", Font = new Font("Segoe UI Emoji", 14), BackColor = Color.Transparent, AutoSize = true, Location = new Point(0, 6) };
-            var lblTit  = new Label { Text = "Mis Huchas", Font = new Font("Segoe UI", 13, FontStyle.Bold), ForeColor = TextoOscuro, BackColor = Color.Transparent, AutoSize = true, Location = new Point(30, 6) };
-            var lblVer  = new Label { Text = "Ver todo", Font = new Font("Segoe UI", 10), ForeColor = AzulPrimario, Cursor = Cursors.Hand, AutoSize = true };
+            var lblTit = new Label { Text = "Mis Huchas", Font = new Font("Segoe UI", 13, FontStyle.Bold), ForeColor = TextoOscuro, BackColor = Color.Transparent, AutoSize = true, Location = new Point(30, 6) };
+            var lblVer = new Label { Text = "Ver todo", Font = new Font("Segoe UI", 10), ForeColor = AzulPrimario, Cursor = Cursors.Hand, AutoSize = true };
             lblVer.Click += (s, e) => HuchasVerTodoClicked?.Invoke(this, EventArgs.Empty);
 
             var btnAdd = new Panel { Size = new Size(26, 26), BackColor = AzulPrimario, Cursor = Cursors.Hand };
@@ -1129,13 +1202,13 @@ namespace NexumApp.Views
             {
                 var empty = new Label
                 {
-                    Text      = "Aún no tienes huchas. ¡Crea tu primera con el botón +!",
-                    Font      = new Font("Segoe UI", 10),
+                    Text = "Aún no tienes huchas. ¡Crea tu primera con el botón +!",
+                    Font = new Font("Segoe UI", 10),
                     ForeColor = TextoGris,
-                    AutoSize  = false,
-                    Height    = CARD_H,
+                    AutoSize = false,
+                    Height = CARD_H,
                     TextAlign = ContentAlignment.MiddleCenter,
-                    Location  = new Point(0, y),
+                    Location = new Point(0, y),
                     BackColor = Color.Transparent
                 };
                 inner.Controls.Add(empty);
@@ -1146,7 +1219,7 @@ namespace NexumApp.Views
                 foreach (var h in huchas)
                 {
                     Color clr = ParseColor(h.ColorHex);
-                    var card  = CrearCardHucha(h, clr);
+                    var card = CrearCardHucha(h, clr);
                     card.Location = new Point(0, y);
                     inner.Controls.Add(card);
                     y += CARD_H + GAP;
@@ -1160,22 +1233,22 @@ namespace NexumApp.Views
 
         private Panel CrearCardHucha(Hucha h, Color clr)
         {
-            string  emoji  = h.Emoji ?? "🐷";
-            string  nombre = h.Nombre;
-            decimal saldo  = h.SaldoActual;
-            decimal meta   = h.MetaObjetivo;
+            string emoji = h.Emoji ?? "🐷";
+            string nombre = h.Nombre;
+            decimal saldo = h.SaldoActual;
+            decimal meta = h.MetaObjetivo;
 
-            const int H   = 96;
+            const int H = 96;
             const int BTN = 22;   // tamaño de cada botón de acción
             const int GAP = 5;    // separación entre botones
 
-            int pct  = meta > 0 ? (int)Math.Min(100, saldo * 100 / meta) : 0;
-            var es   = AppSettings.CultureMoneda;
+            int pct = meta > 0 ? (int)Math.Min(100, saldo * 100 / meta) : 0;
+            var es = AppSettings.CultureMoneda;
             bool hov = false;
 
-            Color bgLight  = Color.FromArgb(18,  clr.R, clr.G, clr.B);
-            Color clrEdit  = Color.FromArgb(99,  102, 241);           // indigo
-            Color clrDel   = Color.FromArgb(220, 38,  38);            // rojo
+            Color bgLight = Color.FromArgb(18, clr.R, clr.G, clr.B);
+            Color clrEdit = Color.FromArgb(99, 102, 241);           // indigo
+            Color clrDel = Color.FromArgb(220, 38, 38);            // rojo
 
             var card = new Panel { Height = H, BackColor = CardFondo, Cursor = Cursors.Hand };
 
@@ -1184,13 +1257,13 @@ namespace NexumApp.Views
                 if (card.Width > 4) try { card.Region = new Region(UiHelper.CrearRoundedRect(card.ClientRectangle, 14)); } catch { }
             };
             card.HandleCreated += applyR;
-            card.Resize        += applyR;
+            card.Resize += applyR;
 
             // ── Calcula las zonas de los 3 botones (derecha, centrados verticalmente) ──
             // Se recalculan en Paint y MouseDown usando el mismo método
             Rectangle ZonaAbonar(int w) => new Rectangle(w - (BTN + GAP) * 3 - 8, (H - BTN) / 2, BTN, BTN);
             Rectangle ZonaEditar(int w) => new Rectangle(w - (BTN + GAP) * 2 - 8, (H - BTN) / 2, BTN, BTN);
-            Rectangle ZonaElim  (int w) => new Rectangle(w - (BTN + GAP)     - 8, (H - BTN) / 2, BTN, BTN);
+            Rectangle ZonaElim(int w) => new Rectangle(w - (BTN + GAP) - 8, (H - BTN) / 2, BTN, BTN);
 
             card.Paint += (s, e) =>
             {
@@ -1249,9 +1322,9 @@ namespace NexumApp.Views
                 {
                     // Badge % (solo cuando no hay hover)
                     string pctTxt = pct + "%";
-                    var pF  = new Font("Segoe UI", 8.5f, FontStyle.Bold);
+                    var pF = new Font("Segoe UI", 8.5f, FontStyle.Bold);
                     var pSz = TextRenderer.MeasureText(pctTxt, pF);
-                    var pR  = new Rectangle(r.Width - pSz.Width - 18, 10, pSz.Width + 12, 22);
+                    var pR = new Rectangle(r.Width - pSz.Width - 18, 10, pSz.Width + 12, 22);
                     using (var path = UiHelper.CrearRoundedRect(pR, 8))
                         g.FillPath(new SolidBrush(bgLight), path);
                     TextRenderer.DrawText(g, pctTxt, pF, pR, clr,
@@ -1287,21 +1360,21 @@ namespace NexumApp.Views
             // Emoji label
             var lIco = new Label
             {
-                Text      = emoji,
-                Font      = new Font("Segoe UI Emoji", 20),
+                Text = emoji,
+                Font = new Font("Segoe UI Emoji", 20),
                 BackColor = Color.Transparent,
-                AutoSize  = false,
-                Size      = new Size(50, 50),
+                AutoSize = false,
+                Size = new Size(50, 50),
                 TextAlign = ContentAlignment.MiddleCenter,
-                Location  = new Point(14, (H - 50) / 2),
-                Cursor    = Cursors.Hand
+                Location = new Point(14, (H - 50) / 2),
+                Cursor = Cursors.Hand
             };
             card.Controls.Add(lIco);
 
             // Hover propagado desde el label del emoji
-            card.MouseEnter += (s, e) => { hov = true;  card.Invalidate(); };
+            card.MouseEnter += (s, e) => { hov = true; card.Invalidate(); };
             card.MouseLeave += (s, e) => { hov = false; card.Invalidate(); };
-            lIco.MouseEnter += (s, e) => { hov = true;  card.Invalidate(); };
+            lIco.MouseEnter += (s, e) => { hov = true; card.Invalidate(); };
             lIco.MouseLeave += (s, e) => { hov = false; card.Invalidate(); };
 
             // ── Clic: hit-testing sobre los 3 botones ───────────────────────
@@ -1366,11 +1439,13 @@ namespace NexumApp.Views
         public void LoadSaldo(decimal saldo) { _saldoActual = saldo; ActualizarTextoSaldo(); }
         public void UpdateSaldo(decimal saldo) { _saldoActual = saldo; ActualizarTextoSaldo(); }
         public void LoadCuenta(string textoCuenta) { _textoCuenta = textoCuenta ?? ""; if (lblCuenta != null) lblCuenta.Text = _textoCuenta; }
+
         public void LoadCuentasActivas(List<CuentaBancaria> cuentas, int cuentaActivaId)
         {
             if (cmbCuentasActivas == null) return;
 
             _cargandoComboCuentas = true;
+            _cuentaActivaId = cuentaActivaId;  // ← Guardar la cuenta activa
             cmbCuentasActivas.DataSource = null;
             cmbCuentasActivas.Items.Clear();
 
@@ -1407,7 +1482,7 @@ namespace NexumApp.Views
 
             // Actualizar la tarjeta visual con los datos reales de las cuentas
             _cuentasParaTarjeta = lista;
-            ActualizarTarjetaPrincipal();
+            ActualizarTarjetaPorCuentaActiva();
             ActualizarAccionesTarjeta();
         }
 
@@ -1423,7 +1498,14 @@ namespace NexumApp.Views
         {
             if (_cargandoComboCuentas) return;
             if (cmbCuentasActivas?.SelectedItem is ComboCuentaItem item)
+            {
+                _cuentaActivaId = item.CuentaId;  // ← Guardar la cuenta activa
                 CuentaActivaChanged?.Invoke(this, item.CuentaId);
+
+                // IMPORTANTE: Actualizar la tarjeta con la nueva cuenta seleccionada
+                ActualizarTarjetaPorCuentaActiva();
+                ActualizarAccionesTarjeta();
+            }
         }
 
         private static string FormatearCorto(string numeroCuenta)
@@ -1467,20 +1549,20 @@ namespace NexumApp.Views
             var es = AppSettings.CultureMoneda;
             bool esIngreso =
                 (m.TipoMovimiento != null &&
-                    (m.TipoMovimiento.IndexOf("Ingreso",  StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    (m.TipoMovimiento.IndexOf("Ingreso", StringComparison.OrdinalIgnoreCase) >= 0 ||
                      m.TipoMovimiento.IndexOf("Recibida", StringComparison.OrdinalIgnoreCase) >= 0))
                 ||
                 (m.Concepto != null &&
-                    (m.Concepto.IndexOf("Ingreso",  StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    (m.Concepto.IndexOf("Ingreso", StringComparison.OrdinalIgnoreCase) >= 0 ||
                      m.Concepto.IndexOf("Recibida", StringComparison.OrdinalIgnoreCase) >= 0));
 
             // Texto del concepto y subtítulo
-            string concepto  = string.IsNullOrEmpty(m.Concepto) ? m.TipoMovimiento : m.Concepto;
+            string concepto = string.IsNullOrEmpty(m.Concepto) ? m.TipoMovimiento : m.Concepto;
             string subtitulo = "";
             if (!string.IsNullOrEmpty(m.Concepto) && m.Concepto.IndexOf(" - ", StringComparison.Ordinal) >= 0)
             {
                 var partes = m.Concepto.Split(new[] { " - " }, 2, StringSplitOptions.None);
-                concepto  = partes[0];
+                concepto = partes[0];
                 subtitulo = partes.Length > 1 ? partes[1] : "";
             }
             if (string.IsNullOrEmpty(subtitulo))
@@ -1491,7 +1573,7 @@ namespace NexumApp.Views
             ObtenerColoresTipo(m.TipoMovimiento, m.Concepto, esIngreso,
                                out iconBg, out iconFg, out clrMonto);
 
-            string icono      = ObtenerIconoTipo(m.TipoMovimiento, m.Concepto);
+            string icono = ObtenerIconoTipo(m.TipoMovimiento, m.Concepto);
             string montoTexto = (esIngreso ? "+ " : "- ") + m.Monto.ToString("C2", es);
             string fechaTexto = m.Fecha.ToString("dd MMM", es).TrimEnd('.') +
                                 " · " + m.Fecha.ToString("HH:mm", es);
@@ -1503,10 +1585,10 @@ namespace NexumApp.Views
             // Layout: [icono 58px] [contenido 100%] [derecha 145px]
             var tlp = new TableLayoutPanel
             {
-                Dock        = DockStyle.Fill,
+                Dock = DockStyle.Fill,
                 ColumnCount = 3,
-                RowCount    = 1,
-                Padding     = new Padding(0, 8, 0, 8)
+                RowCount = 1,
+                Padding = new Padding(0, 8, 0, 8)
             };
             tlp.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 58));
             tlp.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
@@ -1516,9 +1598,9 @@ namespace NexumApp.Views
             var pnlIconWrap = new Panel { Dock = DockStyle.Fill };
             var pnlIcon = new Panel
             {
-                Size      = new Size(44, 44),
+                Size = new Size(44, 44),
                 BackColor = iconBg,
-                Location  = new Point(0, 0)
+                Location = new Point(0, 0)
             };
             pnlIcon.Paint += (s, e) =>
             {
@@ -1528,14 +1610,14 @@ namespace NexumApp.Views
             };
             var lIco = new Label
             {
-                Text      = icono,
-                Font      = new Font("Segoe UI Emoji", 16),
-                AutoSize  = false,
-                Size      = new Size(44, 44),
+                Text = icono,
+                Font = new Font("Segoe UI Emoji", 16),
+                AutoSize = false,
+                Size = new Size(44, 44),
                 TextAlign = ContentAlignment.MiddleCenter,
                 BackColor = Color.Transparent,
                 ForeColor = iconFg,
-                Location  = new Point(0, 0)
+                Location = new Point(0, 0)
             };
             pnlIcon.Controls.Add(lIco);
             pnlIconWrap.Controls.Add(pnlIcon);
@@ -1543,69 +1625,69 @@ namespace NexumApp.Views
             // ── Concepto + subtítulo ──────────────────────────────
             var contenidoTlp = new TableLayoutPanel
             {
-                Dock        = DockStyle.Fill,
+                Dock = DockStyle.Fill,
                 ColumnCount = 1,
-                RowCount    = 2,
-                Padding     = new Padding(4, 0, 0, 0)
+                RowCount = 2,
+                Padding = new Padding(4, 0, 0, 0)
             };
             contenidoTlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 26));
             contenidoTlp.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             contenidoTlp.Controls.Add(new Label
             {
-                Text         = concepto,
-                Font         = new Font("Segoe UI", 10f, FontStyle.Bold),
-                ForeColor    = TextoOscuro,
-                AutoSize     = false,
-                Dock         = DockStyle.Fill,
-                TextAlign    = ContentAlignment.BottomLeft,
-                MaximumSize  = new Size(0, 0)
+                Text = concepto,
+                Font = new Font("Segoe UI", 10f, FontStyle.Bold),
+                ForeColor = TextoOscuro,
+                AutoSize = false,
+                Dock = DockStyle.Fill,
+                TextAlign = ContentAlignment.BottomLeft,
+                MaximumSize = new Size(0, 0)
             }, 0, 0);
             contenidoTlp.Controls.Add(new Label
             {
-                Text      = subtitulo,
-                Font      = new Font("Segoe UI", 8.5f),
+                Text = subtitulo,
+                Font = new Font("Segoe UI", 8.5f),
                 ForeColor = TextoGris,
-                AutoSize  = false,
-                Dock      = DockStyle.Fill,
+                AutoSize = false,
+                Dock = DockStyle.Fill,
                 TextAlign = ContentAlignment.TopLeft
             }, 0, 1);
 
             // ── Monto + fecha (alineados a la derecha) ────────────
             var derechaTlp = new TableLayoutPanel
             {
-                Dock        = DockStyle.Fill,
+                Dock = DockStyle.Fill,
                 ColumnCount = 1,
-                RowCount    = 2
+                RowCount = 2
             };
             derechaTlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 26));
             derechaTlp.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             derechaTlp.Controls.Add(new Label
             {
-                Text      = montoTexto,
-                Font      = new Font("Segoe UI", 10f, FontStyle.Bold),
+                Text = montoTexto,
+                Font = new Font("Segoe UI", 10f, FontStyle.Bold),
                 ForeColor = clrMonto,
-                AutoSize  = false,
-                Dock      = DockStyle.Fill,
+                AutoSize = false,
+                Dock = DockStyle.Fill,
                 TextAlign = ContentAlignment.BottomRight
             }, 0, 0);
             derechaTlp.Controls.Add(new Label
             {
-                Text      = fechaTexto,
-                Font      = new Font("Segoe UI", 8f),
+                Text = fechaTexto,
+                Font = new Font("Segoe UI", 8f),
                 ForeColor = TextoGris,
-                AutoSize  = false,
-                Dock      = DockStyle.Fill,
+                AutoSize = false,
+                Dock = DockStyle.Fill,
                 TextAlign = ContentAlignment.TopRight
             }, 0, 1);
 
-            tlp.Controls.Add(pnlIconWrap,   0, 0);
-            tlp.Controls.Add(contenidoTlp,  1, 0);
-            tlp.Controls.Add(derechaTlp,    2, 0);
+            tlp.Controls.Add(pnlIconWrap, 0, 0);
+            tlp.Controls.Add(contenidoTlp, 1, 0);
+            tlp.Controls.Add(derechaTlp, 2, 0);
             row.Controls.Add(tlp);
             row.Controls.Add(new Panel
             {
-                Dock      = DockStyle.Bottom,
-                Height    = 1,
+                Dock = DockStyle.Bottom,
+                Height = 1,
                 BackColor = DividerColor
             });
             return row;
@@ -1618,44 +1700,44 @@ namespace NexumApp.Views
             if (!string.IsNullOrEmpty(concepto) &&
                 concepto.IndexOf("hucha", StringComparison.OrdinalIgnoreCase) >= 0)
             {
-                iconBg   = Color.FromArgb(237, 233, 254); // violeta claro
-                iconFg   = Color.FromArgb(109,  40, 217);
-                clrMonto = Color.FromArgb(220,  38,  38);
+                iconBg = Color.FromArgb(237, 233, 254); // violeta claro
+                iconFg = Color.FromArgb(109, 40, 217);
+                clrMonto = Color.FromArgb(220, 38, 38);
                 return;
             }
             // Cashback / Rewards
             if (!string.IsNullOrEmpty(tipo) && tipo.IndexOf("Cashback", StringComparison.OrdinalIgnoreCase) >= 0)
             {
-                iconBg   = Color.FromArgb(254, 243, 199);
-                iconFg   = Color.FromArgb(217, 119,   6);
-                clrMonto = Color.FromArgb( 16, 185, 129);
+                iconBg = Color.FromArgb(254, 243, 199);
+                iconFg = Color.FromArgb(217, 119, 6);
+                clrMonto = Color.FromArgb(16, 185, 129);
                 return;
             }
             if (esIngreso)
             {
-                iconBg   = Color.FromArgb(209, 250, 229); // verde claro
-                iconFg   = Color.FromArgb( 16, 185, 129);
-                clrMonto = Color.FromArgb( 16, 185, 129);
+                iconBg = Color.FromArgb(209, 250, 229); // verde claro
+                iconFg = Color.FromArgb(16, 185, 129);
+                clrMonto = Color.FromArgb(16, 185, 129);
             }
             else if (!string.IsNullOrEmpty(tipo) && tipo.IndexOf("Transferencia", StringComparison.OrdinalIgnoreCase) >= 0)
             {
-                iconBg   = Color.FromArgb(219, 234, 254); // azul claro
-                iconFg   = Color.FromArgb( 59, 130, 246);
-                clrMonto = Color.FromArgb(220,  38,  38); // saliente = rojo
+                iconBg = Color.FromArgb(219, 234, 254); // azul claro
+                iconFg = Color.FromArgb(59, 130, 246);
+                clrMonto = Color.FromArgb(220, 38, 38); // saliente = rojo
             }
             else if (!string.IsNullOrEmpty(concepto) &&
                      (concepto.IndexOf("Recibida", StringComparison.OrdinalIgnoreCase) >= 0 ||
                       concepto.IndexOf("recibida", StringComparison.OrdinalIgnoreCase) >= 0))
             {
-                iconBg   = Color.FromArgb(209, 250, 229); // verde claro
-                iconFg   = Color.FromArgb( 16, 185, 129);
-                clrMonto = Color.FromArgb( 16, 185, 129);
+                iconBg = Color.FromArgb(209, 250, 229); // verde claro
+                iconFg = Color.FromArgb(16, 185, 129);
+                clrMonto = Color.FromArgb(16, 185, 129);
             }
             else
             {
-                iconBg   = Color.FromArgb(254, 226, 226); // rojo claro
-                iconFg   = Color.FromArgb(220,  38,  38);
-                clrMonto = Color.FromArgb(220,  38,  38);
+                iconBg = Color.FromArgb(254, 226, 226); // rojo claro
+                iconFg = Color.FromArgb(220, 38, 38);
+                clrMonto = Color.FromArgb(220, 38, 38);
             }
         }
 
@@ -1666,12 +1748,12 @@ namespace NexumApp.Views
                 concepto.IndexOf("hucha", StringComparison.OrdinalIgnoreCase) >= 0)
                 return "🐷";
             if (string.IsNullOrEmpty(tipo)) return "💰";
-            if (tipo.IndexOf("Ingreso",       StringComparison.OrdinalIgnoreCase) >= 0 ||
-                tipo.IndexOf("Recibida",      StringComparison.OrdinalIgnoreCase) >= 0) return "📥";
+            if (tipo.IndexOf("Ingreso", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                tipo.IndexOf("Recibida", StringComparison.OrdinalIgnoreCase) >= 0) return "📥";
             if (tipo.IndexOf("Transferencia", StringComparison.OrdinalIgnoreCase) >= 0) return "↔️";
-            if (tipo.IndexOf("Retiro",        StringComparison.OrdinalIgnoreCase) >= 0) return "🏧";
-            if (tipo.IndexOf("Pago",          StringComparison.OrdinalIgnoreCase) >= 0) return "💳";
-            if (tipo.IndexOf("Cashback",      StringComparison.OrdinalIgnoreCase) >= 0) return "🎁";
+            if (tipo.IndexOf("Retiro", StringComparison.OrdinalIgnoreCase) >= 0) return "🏧";
+            if (tipo.IndexOf("Pago", StringComparison.OrdinalIgnoreCase) >= 0) return "💳";
+            if (tipo.IndexOf("Cashback", StringComparison.OrdinalIgnoreCase) >= 0) return "🎁";
             return "💰";
         }
 
@@ -1685,13 +1767,13 @@ namespace NexumApp.Views
                 concepto.IndexOf("recibida", StringComparison.OrdinalIgnoreCase) >= 0)
                 return "Transferencia entrante";
             if (string.IsNullOrEmpty(tipo)) return "Operación bancaria";
-            if (tipo.IndexOf("Transferencia Enviada",   StringComparison.OrdinalIgnoreCase) >= 0) return "Transferencia saliente";
-            if (tipo.IndexOf("Transferencia Recibida",  StringComparison.OrdinalIgnoreCase) >= 0) return "Transferencia entrante";
-            if (tipo.IndexOf("Transferencia",           StringComparison.OrdinalIgnoreCase) >= 0) return "Transferencia";
-            if (tipo.IndexOf("Ingreso",                 StringComparison.OrdinalIgnoreCase) >= 0) return "Ingreso en cuenta";
-            if (tipo.IndexOf("Retiro",                  StringComparison.OrdinalIgnoreCase) >= 0) return "Retirada de fondos";
-            if (tipo.IndexOf("Pago",                    StringComparison.OrdinalIgnoreCase) >= 0) return "Pago de servicio";
-            if (tipo.IndexOf("Cashback",                StringComparison.OrdinalIgnoreCase) >= 0) return "Nexum Rewards";
+            if (tipo.IndexOf("Transferencia Enviada", StringComparison.OrdinalIgnoreCase) >= 0) return "Transferencia saliente";
+            if (tipo.IndexOf("Transferencia Recibida", StringComparison.OrdinalIgnoreCase) >= 0) return "Transferencia entrante";
+            if (tipo.IndexOf("Transferencia", StringComparison.OrdinalIgnoreCase) >= 0) return "Transferencia";
+            if (tipo.IndexOf("Ingreso", StringComparison.OrdinalIgnoreCase) >= 0) return "Ingreso en cuenta";
+            if (tipo.IndexOf("Retiro", StringComparison.OrdinalIgnoreCase) >= 0) return "Retirada de fondos";
+            if (tipo.IndexOf("Pago", StringComparison.OrdinalIgnoreCase) >= 0) return "Pago de servicio";
+            if (tipo.IndexOf("Cashback", StringComparison.OrdinalIgnoreCase) >= 0) return "Nexum Rewards";
             return "Operación bancaria";
         }
 
@@ -1726,9 +1808,9 @@ namespace NexumApp.Views
                 int ancho = Math.Max(240, pnlObjetivosContenedor.ClientSize.Width - 18);
 
                 // Colores según progreso
-                Color colorBadge    = progreso < 50 ? Color.FromArgb(16, 185, 129) : Color.FromArgb(249, 115, 22);
-                Color colorBarra1   = progreso < 50 ? Color.FromArgb(99, 241, 180) : Color.FromArgb(251, 191, 36);
-                Color colorBarra2   = progreso < 50 ? Color.FromArgb(16, 185, 129) : Color.FromArgb(249, 115, 22);
+                Color colorBadge = progreso < 50 ? Color.FromArgb(16, 185, 129) : Color.FromArgb(249, 115, 22);
+                Color colorBarra1 = progreso < 50 ? Color.FromArgb(99, 241, 180) : Color.FromArgb(251, 191, 36);
+                Color colorBarra2 = progreso < 50 ? Color.FromArgb(16, 185, 129) : Color.FromArgb(249, 115, 22);
 
                 var card = new Panel
                 {
@@ -1872,12 +1954,12 @@ namespace NexumApp.Views
             var es = AppSettings.CultureMoneda;
             if (lblPresupuestoRestante != null) lblPresupuestoRestante.Text = datos.Restante.ToString("C0", es);
             if (lblIngresos != null) lblIngresos.Text = datos.Ingresos.ToString("C0", es);
-            if (lblGastos   != null) lblGastos.Text   = datos.Gastos.ToString("C0", es);
-            if (lblObjetivo != null) lblObjetivo.Text  = datos.Objetivo.ToString("C0", es);
+            if (lblGastos != null) lblGastos.Text = datos.Gastos.ToString("C0", es);
+            if (lblObjetivo != null) lblObjetivo.Text = datos.Objetivo.ToString("C0", es);
 
             // Actualizar datos del donut y redibujar
             _donutIngresos = (float)datos.Ingresos;
-            _donutGastos   = (float)datos.Gastos;
+            _donutGastos = (float)datos.Gastos;
             _donutPanel?.Invalidate();
 
             // Badge motivacional
@@ -1887,7 +1969,7 @@ namespace NexumApp.Views
                 // Color según situación
                 bool positivo = datos.Restante >= 0 && (datos.Ingresos > 0 || datos.Gastos > 0);
                 lblPresupuestoMensaje.ForeColor = positivo
-                    ? Color.FromArgb(5,  150, 105)
+                    ? Color.FromArgb(5, 150, 105)
                     : Color.FromArgb(180, 50, 30);
                 lblPresupuestoMensaje.BackColor = positivo
                     ? Color.FromArgb(220, 252, 231)
@@ -1921,7 +2003,7 @@ namespace NexumApp.Views
                     try { pnl.Region = new Region(UiHelper.CrearRoundedRect(pnl.ClientRectangle, 10)); } catch { }
             };
             pnl.HandleCreated += aplicarRegion;
-            pnl.Resize        += aplicarRegion;
+            pnl.Resize += aplicarRegion;
 
             pnl.Paint += (s, e) =>
             {
@@ -1943,8 +2025,8 @@ namespace NexumApp.Views
                     g.FillRectangle(shine, r.X, r.Y, r.Width, r.Height / 2);
 
                 int iconSz = Math.Min(20, r.Height - 10);
-                int iconX  = 12;
-                int iconY  = (r.Height - iconSz) / 2;
+                int iconX = 12;
+                int iconY = (r.Height - iconSz) / 2;
                 DibujarIconoBotonRapido(g, new Rectangle(r.X + iconX, r.Y + iconY, iconSz, iconSz), tipo);
 
                 var fmt = new StringFormat { LineAlignment = StringAlignment.Center, Alignment = StringAlignment.Near, FormatFlags = StringFormatFlags.NoWrap };
@@ -1953,10 +2035,10 @@ namespace NexumApp.Views
                     g.DrawString(texto, f, Brushes.White, textRect, fmt);
             };
 
-            pnl.MouseEnter += (s, e) => { hovered = true;  pnl.Invalidate(); };
+            pnl.MouseEnter += (s, e) => { hovered = true; pnl.Invalidate(); };
             pnl.MouseLeave += (s, e) => { hovered = false; pressed = false; pnl.Invalidate(); };
-            pnl.MouseDown  += (s, e) => { pressed = true;  pnl.Invalidate(); };
-            pnl.MouseUp    += (s, e) => { pressed = false; pnl.Invalidate(); };
+            pnl.MouseDown += (s, e) => { pressed = true; pnl.Invalidate(); };
+            pnl.MouseUp += (s, e) => { pressed = false; pnl.Invalidate(); };
             pnl.Click += click;
             return pnl;
         }

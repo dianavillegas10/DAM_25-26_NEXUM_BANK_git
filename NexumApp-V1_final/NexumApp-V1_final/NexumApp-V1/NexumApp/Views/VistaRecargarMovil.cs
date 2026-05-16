@@ -1,5 +1,6 @@
 using NexumApp.Models;
 using NexumApp.Services;
+using NexumApp.Vºº;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -10,27 +11,35 @@ namespace NexumApp.Views
 {
     public class VistaRecargarMovil : UserControl
     {
-        private static readonly Color C_Red     = Color.FromArgb(236, 0, 0);
+        private static readonly Color C_Red = Color.FromArgb(236, 0, 0);
         private static readonly Color C_RedDark = Color.FromArgb(180, 0, 0);
-        private static readonly Color C_BgPage  = Color.FromArgb(246, 247, 249);
-        private static readonly Color C_White   = Color.White;
-        private static readonly Color C_Border  = Color.FromArgb(220, 224, 230);
-        private static readonly Color C_Text    = Color.FromArgb(30, 30, 50);
-        private static readonly Color C_Muted   = Color.FromArgb(110, 120, 140);
-        private static readonly Color C_Green   = Color.FromArgb(0, 168, 89);
+        private static readonly Color C_BgPage = Color.FromArgb(246, 247, 249);
+        private static readonly Color C_White = Color.White;
+        private static readonly Color C_Border = Color.FromArgb(220, 224, 230);
+        private static readonly Color C_Text = Color.FromArgb(30, 30, 50);
+        private static readonly Color C_Muted = Color.FromArgb(110, 120, 140);
+        private static readonly Color C_Green = Color.FromArgb(0, 168, 89);
         private static readonly Color C_BlueSel = Color.FromArgb(235, 240, 255);
-        private static readonly Color C_Blue    = Color.FromArgb(70, 100, 220);
-        private static readonly CultureInfo ES  = CultureInfo.CreateSpecificCulture("es-ES");
+        private static readonly Color C_Blue = Color.FromArgb(70, 100, 220);
+        private static readonly CultureInfo ES = CultureInfo.CreateSpecificCulture("es-ES");
 
-        private readonly CuentaService     _cuentaService = new CuentaService();
-        private readonly MovimientoService _movService    = new MovimientoService();
+        private readonly CuentaService _cuentaService = new CuentaService();
+        private readonly MovimientoService _movService = new MovimientoService();
 
         private ComboBox _cmbCuenta;
-        private Label    _lblSaldo, _lblError;
-        private TextBox  _txtTelefono;
-        private Button   _btnRecargar;
-        private decimal  _importeSeleccionado = 0;
+        private Label _lblSaldo, _lblError;
+        private TextBox _txtTelefono;
+        private Button _btnRecargar;
+        private Button _btnGenerarPdf;
+        private decimal _importeSeleccionado = 0;
         private FlowLayoutPanel _pnlImportes;
+
+        // Variables para guardar el último pago
+        private decimal _ultimoImporte;
+        private string _ultimoTelefono;
+        private string _ultimaOperadora;
+        private CuentaBancaria _ultimaCuenta;
+        private DateTime _ultimaFecha;
 
         private static readonly (decimal Importe, string Bono)[] IMPORTES = {
             (5m,  "Sin bono"),
@@ -51,7 +60,7 @@ namespace NexumApp.Views
         };
 
         private string _operadoraSeleccionada = "";
-        private Panel  _pnlOperadoras;
+        private Panel _pnlOperadoras;
 
         public VistaRecargarMovil() { BackColor = C_BgPage; Dock = DockStyle.Fill; DoubleBuffered = true; }
 
@@ -61,7 +70,7 @@ namespace NexumApp.Views
         {
             Controls.Clear();
             var scroll = new Panel { Dock = DockStyle.Fill, AutoScroll = true, BackColor = C_BgPage };
-            var main   = new Panel { Width = 820, AutoSize = true, AutoSizeMode = AutoSizeMode.GrowAndShrink, BackColor = Color.Transparent };
+            var main = new Panel { Width = 820, AutoSize = true, AutoSizeMode = AutoSizeMode.GrowAndShrink, BackColor = Color.Transparent };
             scroll.Controls.Add(main);
             scroll.Resize += (s, ev) => { main.Left = Math.Max(32, (scroll.ClientSize.Width - 820) / 2); };
             Controls.Add(scroll);
@@ -76,23 +85,30 @@ namespace NexumApp.Views
             // Card cuenta
             var cardCuenta = MakeCard(new Point(0, y), new Size(780, 86)); main.Controls.Add(cardCuenta); y += 100;
             cardCuenta.Controls.Add(FieldLbl("CUENTA DE CARGO", 20, 14));
-            _cmbCuenta = new ComboBox { Location = new Point(20, 34), Size = new Size(500, 28),
-                DropDownStyle = ComboBoxStyle.DropDownList, Font = new Font("Segoe UI", 10),
-                BackColor = C_White, ForeColor = C_Text, FlatStyle = FlatStyle.Flat };
+            _cmbCuenta = new ComboBox
+            {
+                Location = new Point(20, 34),
+                Size = new Size(500, 28),
+                DropDownStyle = ComboBoxStyle.DropDownList,
+                Font = new Font("Segoe UI", 10),
+                BackColor = C_White,
+                ForeColor = C_Text,
+                FlatStyle = FlatStyle.Flat
+            };
             _cmbCuenta.SelectedIndexChanged += (s, ev) => ActualizarSaldo();
             cardCuenta.Controls.Add(_cmbCuenta);
             _lblSaldo = new Label { Location = new Point(20, 66), AutoSize = true, ForeColor = C_Green, Font = new Font("Segoe UI", 8, FontStyle.Bold) };
             cardCuenta.Controls.Add(_lblSaldo);
 
             // Sección teléfono y operadora
-            var cardForm = MakeCard(new Point(0, y), new Size(780, 280)); main.Controls.Add(cardForm); y += 294;
+            var cardForm = MakeCard(new Point(0, y), new Size(780, 310)); main.Controls.Add(cardForm); y += 324;
             int iy = 20;
 
             // Teléfono
             cardForm.Controls.Add(FieldLbl("NÚMERO DE TELÉFONO", 20, iy)); iy += 20;
             var pTel = InputBoxInline(cardForm, new Point(20, iy), new Size(300, 44), out _txtTelefono, "6XX XXX XXX");
             _txtTelefono.Font = new Font("Segoe UI", 14, FontStyle.Bold);
-            _txtTelefono.GotFocus  += (s, e) => FocusBox(pTel, C_Red);
+            _txtTelefono.GotFocus += (s, e) => FocusBox(pTel, C_Red);
             _txtTelefono.LostFocus += (s, e) => FocusBox(pTel, C_Border);
             iy += 56;
 
@@ -104,9 +120,18 @@ namespace NexumApp.Views
             foreach (var (nombre, ico, col) in OPERADORAS)
             {
                 string n = nombre; Color c = col;
-                var btn = new Button { Text = $"{ico} {n}", Location = new Point(ox, 0), Size = new Size(112, 40),
-                    BackColor = C_White, ForeColor = C_Text, FlatStyle = FlatStyle.Flat,
-                    Font = new Font("Segoe UI", 9, FontStyle.Bold), Cursor = Cursors.Hand, Tag = n };
+                var btn = new Button
+                {
+                    Text = $"{ico} {n}",
+                    Location = new Point(ox, 0),
+                    Size = new Size(112, 40),
+                    BackColor = C_White,
+                    ForeColor = C_Text,
+                    FlatStyle = FlatStyle.Flat,
+                    Font = new Font("Segoe UI", 9, FontStyle.Bold),
+                    Cursor = Cursors.Hand,
+                    Tag = n
+                };
                 btn.FlatAppearance.BorderColor = C_Border; btn.FlatAppearance.BorderSize = 1;
                 btn.Click += (s, ev) => SeleccionarOperadora(n, _pnlOperadoras);
                 btn.MouseEnter += (s, ev) => { if (_operadoraSeleccionada != n) btn.BackColor = Color.FromArgb(250, 250, 252); };
@@ -116,31 +141,88 @@ namespace NexumApp.Views
             iy += 60;
 
             // Error
-            _lblError = new Label { Location = new Point(20, iy), Size = new Size(740, 16),
-                ForeColor = C_Red, Font = new Font("Segoe UI", 8, FontStyle.Bold), Visible = false };
+            _lblError = new Label
+            {
+                Location = new Point(20, iy),
+                Size = new Size(740, 16),
+                ForeColor = C_Red,
+                Font = new Font("Segoe UI", 8, FontStyle.Bold),
+                Visible = false
+            };
             cardForm.Controls.Add(_lblError); iy += 22;
 
-            // Nota seguridad + botón
-            cardForm.Controls.Add(new Label { Text = "🔒  Recarga certificada · Confirmación por SMS · 100% segura",
-                ForeColor = C_Muted, Font = new Font("Segoe UI", 8, FontStyle.Italic), Location = new Point(210, iy + 10), AutoSize = true });
-            _btnRecargar = new Button { Text = "Recargar ahora", Location = new Point(20, iy), Size = new Size(180, 44),
-                BackColor = C_Red, ForeColor = Color.White, FlatStyle = FlatStyle.Flat,
-                Font = new Font("Segoe UI", 11, FontStyle.Bold), Cursor = Cursors.Hand };
+            // Botones (Recargar + Generar PDF)
+            var pnlBotones = new FlowLayoutPanel
+            {
+                Location = new Point(20, iy),
+                Size = new Size(740, 50),
+                FlowDirection = FlowDirection.LeftToRight
+            };
+
+            _btnRecargar = new Button
+            {
+                Text = "Recargar ahora",
+                Size = new Size(180, 44),
+                BackColor = C_Red,
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 11, FontStyle.Bold),
+                Cursor = Cursors.Hand
+            };
             _btnRecargar.FlatAppearance.BorderSize = 0;
             _btnRecargar.MouseEnter += (s, e) => _btnRecargar.BackColor = C_RedDark;
             _btnRecargar.MouseLeave += (s, e) => _btnRecargar.BackColor = C_Red;
             _btnRecargar.Click += BtnRecargar_Click;
-            cardForm.Controls.Add(_btnRecargar);
-            cardForm.Height = iy + 56;
-            BeginInvoke(new Action(() => { Redondear(_btnRecargar, 8); Redondear(pTel, 8); }));
+
+            _btnGenerarPdf = new Button
+            {
+                Text = "📄 Generar Recibo",
+                Size = new Size(180, 44),
+                BackColor = Color.FromArgb(59, 130, 246),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 11, FontStyle.Bold),
+                Cursor = Cursors.Hand,
+                Enabled = false
+            };
+            _btnGenerarPdf.FlatAppearance.BorderSize = 0;
+            _btnGenerarPdf.Click += BtnGenerarPdf_Click;
+
+            pnlBotones.Controls.AddRange(new Control[] { _btnRecargar, _btnGenerarPdf });
+            cardForm.Controls.Add(pnlBotones);
+
+            // Nota seguridad
+            cardForm.Controls.Add(new Label
+            {
+                Text = "🔒  Recarga certificada · Confirmación por SMS · 100% segura",
+                ForeColor = C_Muted,
+                Font = new Font("Segoe UI", 8, FontStyle.Italic),
+                Location = new Point(210, iy + 12),
+                AutoSize = true
+            });
+
+            cardForm.Height = iy + 70;
+            BeginInvoke(new Action(() => { Redondear(_btnRecargar, 8); Redondear(_btnGenerarPdf, 8); Redondear(pTel, 8); }));
 
             // Importes
-            main.Controls.Add(new Label { Text = "Selecciona el importe", ForeColor = C_Text,
-                Font = new Font("Segoe UI", 13, FontStyle.Bold), Location = new Point(0, y), AutoSize = true }); y += 30;
+            main.Controls.Add(new Label
+            {
+                Text = "Selecciona el importe",
+                ForeColor = C_Text,
+                Font = new Font("Segoe UI", 13, FontStyle.Bold),
+                Location = new Point(0, y),
+                AutoSize = true
+            }); y += 30;
 
-            var flowImportes = new FlowLayoutPanel { Location = new Point(0, y), Size = new Size(780, 80),
-                FlowDirection = FlowDirection.LeftToRight, WrapContents = false,
-                BackColor = Color.Transparent, Padding = new Padding(0) };
+            var flowImportes = new FlowLayoutPanel
+            {
+                Location = new Point(0, y),
+                Size = new Size(780, 80),
+                FlowDirection = FlowDirection.LeftToRight,
+                WrapContents = false,
+                BackColor = Color.Transparent,
+                Padding = new Padding(0)
+            };
             _pnlImportes = flowImportes;
             main.Controls.Add(flowImportes); y += 92;
 
@@ -161,25 +243,43 @@ namespace NexumApp.Views
             var card = new Panel { Size = new Size(118, 70), BackColor = C_White, Margin = new Padding(0, 0, 10, 0), Cursor = Cursors.Hand, Tag = imp };
             card.Paint += (s, ev) => {
                 ev.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-                using (var path = RR(card.ClientRectangle, 10)) {
+                using (var path = RR(card.ClientRectangle, 10))
+                {
                     ev.Graphics.FillPath(new SolidBrush(card.BackColor), path);
                     bool sel = _importeSeleccionado == imp;
                     ev.Graphics.DrawPath(new Pen(sel ? C_Red : C_Border, sel ? 2f : 1f), path);
                 }
             };
             Redondear(card, 10);
-            Action hover   = () => { if (_importeSeleccionado != imp) { card.BackColor = C_BlueSel; card.Invalidate(); } };
+            Action hover = () => { if (_importeSeleccionado != imp) { card.BackColor = C_BlueSel; card.Invalidate(); } };
             Action unhover = () => { if (_importeSeleccionado != imp) { card.BackColor = C_White; card.Invalidate(); } };
             card.MouseEnter += (s, e) => hover();
             card.MouseLeave += (s, e) => unhover();
-            var lblPrecio = new Label { Text = imp.ToString("C0", ES), ForeColor = _importeSeleccionado == imp ? C_Red : C_Text,
-                Font = new Font("Segoe UI", 14, FontStyle.Bold), Location = new Point(0, 10), Size = new Size(118, 24),
-                TextAlign = ContentAlignment.MiddleCenter, BackColor = Color.Transparent, Cursor = Cursors.Hand, Tag = "precio" };
-            var lblBono = new Label { Text = bono, ForeColor = C_Muted, Font = new Font("Segoe UI", 7),
-                Location = new Point(0, 40), Size = new Size(118, 20),
-                TextAlign = ContentAlignment.MiddleCenter, BackColor = Color.Transparent, Cursor = Cursors.Hand };
+            var lblPrecio = new Label
+            {
+                Text = imp.ToString("C0", ES),
+                ForeColor = _importeSeleccionado == imp ? C_Red : C_Text,
+                Font = new Font("Segoe UI", 14, FontStyle.Bold),
+                Location = new Point(0, 10),
+                Size = new Size(118, 24),
+                TextAlign = ContentAlignment.MiddleCenter,
+                BackColor = Color.Transparent,
+                Cursor = Cursors.Hand,
+                Tag = "precio"
+            };
+            var lblBono = new Label
+            {
+                Text = bono,
+                ForeColor = C_Muted,
+                Font = new Font("Segoe UI", 7),
+                Location = new Point(0, 40),
+                Size = new Size(118, 20),
+                TextAlign = ContentAlignment.MiddleCenter,
+                BackColor = Color.Transparent,
+                Cursor = Cursors.Hand
+            };
             lblPrecio.MouseEnter += (s, e) => hover(); lblPrecio.MouseLeave += (s, e) => unhover();
-            lblBono.MouseEnter   += (s, e) => hover(); lblBono.MouseLeave   += (s, e) => unhover();
+            lblBono.MouseEnter += (s, e) => hover(); lblBono.MouseLeave += (s, e) => unhover();
             card.Controls.Add(lblPrecio); card.Controls.Add(lblBono);
             return card;
         }
@@ -226,18 +326,76 @@ namespace NexumApp.Views
             if (res != DialogResult.Yes) return;
 
             _btnRecargar.Enabled = false; _btnRecargar.Text = "Procesando...";
+            _btnGenerarPdf.Enabled = false;
+
             bool ok = _movService.RegistrarRetiro(ci.Cuenta.Id, _importeSeleccionado,
                 $"Recarga móvil {_operadoraSeleccionada} – {_txtTelefono.Text.Trim()}", out string err);
+
             if (ok)
             {
+                // Guardar datos para el PDF
+                _ultimoImporte = _importeSeleccionado;
+                _ultimoTelefono = _txtTelefono.Text.Trim();
+                _ultimaOperadora = _operadoraSeleccionada;
+                _ultimaCuenta = ci.Cuenta;
+                _ultimaFecha = DateTime.Now;
+
                 MessageBox.Show($"✓  Recarga de {_importeSeleccionado.ToString("C2", ES)} enviada correctamente al {_txtTelefono.Text.Trim()}.",
                     "Nexum Bank — Recarga confirmada", MessageBoxButtons.OK, MessageBoxIcon.None);
+
                 _txtTelefono.Text = ""; _operadoraSeleccionada = ""; _importeSeleccionado = 0;
                 SeleccionarImporte(0, _pnlImportes); SeleccionarOperadora("", _pnlOperadoras);
                 CargarCuentas();
+
+                // Habilitar botón de PDF
+                _btnGenerarPdf.Enabled = true;
+                _btnGenerarPdf.BackColor = Color.FromArgb(34, 197, 94);
             }
             else Err(err ?? "No se pudo procesar la recarga.");
+
             _btnRecargar.Enabled = true; _btnRecargar.Text = "Recargar ahora";
+        }
+
+        private void BtnGenerarPdf_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (_ultimaCuenta == null)
+                {
+                    MessageBox.Show("No hay una recarga reciente para generar el recibo.", "Información",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                var pdfService = new ReciboMovilPdfService();
+                string rutaPdf = pdfService.GenerarReciboRecarga(
+                    _ultimaCuenta,
+                    _ultimoTelefono,
+                    _ultimaOperadora,
+                    _ultimoImporte,
+                    _ultimaFecha
+                );
+
+                DialogResult result = MessageBox.Show(
+                    $"Recibo generado exitosamente.\n\nUbicación: {rutaPdf}\n\n¿Desea abrirlo ahora?",
+                    "PDF Generado",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Information);
+
+                if (result == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                    {
+                        FileName = rutaPdf,
+                        UseShellExecute = true
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al generar el recibo: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void CargarCuentas()
@@ -256,29 +414,36 @@ namespace NexumApp.Views
 
         private void ActualizarSaldo() { if (_cmbCuenta.SelectedItem is CuentaItem ci) _lblSaldo.Text = $"✓  Saldo disponible: {ci.Cuenta.Saldo.ToString("C2", ES)}"; }
 
-        private Panel MakeCard(Point loc, Size sz) {
+        private Panel MakeCard(Point loc, Size sz)
+        {
             var p = new Panel { Location = loc, Size = sz, BackColor = C_White };
             p.Paint += (s, ev) => { ev.Graphics.SmoothingMode = SmoothingMode.AntiAlias; using (var path = RR(p.ClientRectangle, 12)) { ev.Graphics.FillPath(Brushes.White, path); ev.Graphics.DrawPath(new Pen(C_Border, 1), path); } };
             BeginInvoke(new Action(() => Redondear(p, 12))); return p;
         }
-        private Panel InputBoxInline(Panel parent, Point loc, Size sz, out TextBox txt, string hint) {
+
+        private Panel InputBoxInline(Panel parent, Point loc, Size sz, out TextBox txt, string hint)
+        {
             var p = new Panel { Location = loc, Size = sz, BackColor = C_White, Tag = C_Border };
             p.Paint += (s, ev) => { var col = p.Tag is Color c ? c : C_Border; ev.Graphics.SmoothingMode = SmoothingMode.AntiAlias; using (var path = RR(p.ClientRectangle, 8)) { ev.Graphics.FillPath(Brushes.White, path); ev.Graphics.DrawPath(new Pen(col, 1.5f), path); } };
             txt = new TextBox { Location = new Point(10, (sz.Height - 22) / 2), Size = new Size(sz.Width - 20, 24), Font = new Font("Segoe UI", 10), BackColor = C_White, ForeColor = C_Text, BorderStyle = BorderStyle.None };
             p.Controls.Add(txt); parent.Controls.Add(p); return p;
         }
+
         private void FocusBox(Panel p, Color col) { p.Tag = col; p.Invalidate(); }
-        private Panel MakeIconCircle(Point loc, int size, Color col, string g, float fs) {
+
+        private Panel MakeIconCircle(Point loc, int size, Color col, string g, float fs)
+        {
             var p = new Panel { Location = loc, Size = new Size(size, size), BackColor = Color.Transparent };
             p.Paint += (s, ev) => { ev.Graphics.SmoothingMode = SmoothingMode.AntiAlias; ev.Graphics.FillEllipse(new SolidBrush(Color.FromArgb(20, col.R, col.G, col.B)), p.ClientRectangle); var fmt = new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center }; ev.Graphics.DrawString(g, new Font("Segoe UI", fs), new SolidBrush(col), p.ClientRectangle, fmt); };
             return p;
         }
+
         private Label FieldLbl(string t, int x, int y) => new Label { Text = t, Location = new Point(x, y), ForeColor = C_Muted, Font = new Font("Segoe UI", 8, FontStyle.Bold), AutoSize = true };
         private void Err(string msg) { _lblError.Text = "⚠  " + msg; _lblError.Visible = true; }
+
         private static GraphicsPath RR(Rectangle r, int rad) { int d = rad * 2; var p = new GraphicsPath(); p.AddArc(r.X, r.Y, d, d, 180, 90); p.AddArc(r.Right - d, r.Y, d, d, 270, 90); p.AddArc(r.Right - d, r.Bottom - d, d, d, 0, 90); p.AddArc(r.X, r.Bottom - d, d, d, 90, 90); p.CloseAllFigures(); return p; }
         private static void Redondear(Control c, int r) { try { if (c.Width > 0 && c.Height > 0) c.Region = new Region(RR(c.ClientRectangle, r)); } catch { } }
 
-        // Propaga el click recursivamente a todos los controles hijo
         private static void PropagateClick(Control parent, EventHandler handler)
         {
             parent.Click += handler;

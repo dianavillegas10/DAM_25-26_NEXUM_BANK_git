@@ -5,8 +5,9 @@
     "\\NexumApp-V1_final\\NexumApp-V1",
     "\\NexumApp-V1_final\\NexumApp-V1\\NexumApp",
     "\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms",
-    "\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin"
+    "\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin",
+    "\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services"
   ],
-  "SelectedNode": "\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmEditarUsuario.Designer.cs",
+  "SelectedNode": "\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\ReciboMovilPdfService.cs",
   "PreviewInSolutionExplorer": false
 }

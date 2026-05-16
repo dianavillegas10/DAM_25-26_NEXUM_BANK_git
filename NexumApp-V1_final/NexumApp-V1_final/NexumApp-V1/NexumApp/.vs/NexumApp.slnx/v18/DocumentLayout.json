@@ -1,201 +1,76 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\",
+  "WorkspaceRootPath": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|NexumApp||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|c:\\users\\diana\\downloads\\nexumapp-v1_final (2)\\nexumapp-v1_final\\nexumapp-v1\\nexumapp\\forms\\admin\\frmeditarusuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmeditarusuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|c:\\users\\diana\\desktop\\dam_25-26_nexum_bank\\nexumapp-v1_final\\nexumapp-v1_final\\nexumapp-v1\\nexumapp\\services\\recibomovilpdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:services\\recibomovilpdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmeditarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmeditarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\views\\vistarecargarmovil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:views\\vistarecargarmovil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\services\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:services\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmgestiontickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmgestiontickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\tickets\\frmcrearticketsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\tickets\\frmcrearticketsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\services\\tarjetaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:services\\tarjetaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\views\\uc_inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:views\\uc_inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\views\\uc_inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:views\\uc_inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\models\\tarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:models\\tarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\services\\cuentaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:services\\cuentaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\models\\cuentabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:models\\cuentabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\cuentas\\frmabrircuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\cuentas\\frmabrircuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\services\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:services\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\principal\\frmdashboardusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\principal\\frmdashboardusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\principal\\frmdashboardusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\cuentas\\frmmiscuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\cuentas\\frmmiscuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\views\\vistapagarservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:views\\vistapagarservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\cuentas\\frmdetallecuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\cuentas\\frmdetallecuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\services\\cuentaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:services\\cuentaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\cuentas\\frmabrircuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\cuentas\\frmabrircuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\services\\recibopdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:services\\recibopdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\principal\\frmdashboardusuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\principal\\frmdashboardusuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\models\\cuentabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:models\\cuentabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\principal\\frmdashboardusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\principal\\frmdashboardusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\services\\movimientoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:services\\movimientoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\principal\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\principal\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\views\\uc_inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:views\\uc_inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmcancelarcuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmcancelarcuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\views\\vistadividircuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:views\\vistadividircuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmgestiontransferencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmgestiontransferencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\views\\vistaanalizargastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:views\\vistaanalizargastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmgestiontarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmgestiontarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\views\\uc_inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:views\\uc_inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmgestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmgestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\views\\vistatarjetas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:views\\vistatarjetas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\services\\tarjetaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:services\\tarjetaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\data\\nexumdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:data\\nexumdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\models\\tarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:models\\tarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmadmindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmadmindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmreportesadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmreportesadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmnuevousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmnuevousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmnuevousuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmnuevousuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmgestionusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmgestionusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\tickets\\frmcrearticketsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\tickets\\frmcrearticketsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\tickets\\frmmisticketssimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\tickets\\frmmisticketssimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\principal\\frmopcionesayuda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\principal\\frmopcionesayuda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\tickets\\frmmisticketssimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\tickets\\frmmisticketssimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\principal\\frmopcionesayuda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\principal\\frmopcionesayuda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmreportesadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmreportesadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\services\\adminticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:services\\adminticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\models\\sesionactual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:models\\sesionactual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\forms\\admin\\frmgestiontickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:forms\\admin\\frmgestiontickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\helpers\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\helpers\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|solutionrelative:helpers\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Services\\EstadisticasService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmContactoDirecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\forms\\principal\\frmcontactodirecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|c:\\users\\diana\\downloads\\nexumapp-v1_final (2)\\nexumapp-v1_final\\nexumapp-v1\\nexumapp\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{77A3089B-956F-4DDA-9D52-3D96D1FD83B3}|NexumApp.csproj|c:\\users\\diana\\desktop\\dam_25-26_nexum_bank\\nexumapp-v1_final\\nexumapp-v1_final\\nexumapp-v1\\nexumapp\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -227,576 +102,201 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "NexumApp",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\NexumApp.csproj",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\NexumApp.csproj",
               "RelativeDocumentMoniker": "NexumApp.csproj",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\NexumApp.csproj",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\NexumApp.csproj",
               "RelativeToolTip": "NexumApp.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-10T18:29:21.998Z",
+              "WhenOpened": "2026-05-16T18:53:27.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReciboMovilPdfService.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\ReciboMovilPdfService.cs",
+              "RelativeDocumentMoniker": "Services\\ReciboMovilPdfService.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\ReciboMovilPdfService.cs",
+              "RelativeToolTip": "Services\\ReciboMovilPdfService.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAswKUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T21:10:55.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VistaRecargarMovil.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\VistaRecargarMovil.cs",
+              "RelativeDocumentMoniker": "Views\\VistaRecargarMovil.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\VistaRecargarMovil.cs",
+              "RelativeToolTip": "Views\\VistaRecargarMovil.cs",
+              "ViewState": "AgIAAKIBAAAAAAAAAAAswMoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T20:58:04.891Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "FrmGestionTickets.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionTickets.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmGestionTickets.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionTickets.cs",
-              "RelativeToolTip": "Forms\\Admin\\FrmGestionTickets.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAAAkwOMAAAABAAAAAAAAAA==",
+              "Title": "ReciboPdfService.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\ReciboPdfService.cs",
+              "RelativeDocumentMoniker": "Services\\ReciboPdfService.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\ReciboPdfService.cs",
+              "RelativeToolTip": "Services\\ReciboPdfService.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAkwLkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T11:20:17.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FrmCrearTicketSimple.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Tickets\\FrmCrearTicketSimple.cs",
-              "RelativeDocumentMoniker": "Forms\\Tickets\\FrmCrearTicketSimple.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Tickets\\FrmCrearTicketSimple.cs",
-              "RelativeToolTip": "Forms\\Tickets\\FrmCrearTicketSimple.cs",
-              "ViewState": "AgIAACgBAAAAAAAAAADwv1ABAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:11:58.021Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TicketService.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\TicketService.cs",
-              "RelativeDocumentMoniker": "Services\\TicketService.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\TicketService.cs",
-              "RelativeToolTip": "Services\\TicketService.cs",
-              "ViewState": "AgIAAP8AAAAAAAAAAAAYwB0BAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T10:46:18.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\Ticket.cs",
-              "RelativeDocumentMoniker": "Models\\Ticket.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\Ticket.cs",
-              "RelativeToolTip": "Models\\Ticket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T10:45:53.796Z"
+              "WhenOpened": "2026-05-14T20:49:20.668Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "UC_Inicio.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\UC_Inicio.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\UC_Inicio.cs",
               "RelativeDocumentMoniker": "Views\\UC_Inicio.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\UC_Inicio.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\UC_Inicio.cs",
               "RelativeToolTip": "Views\\UC_Inicio.cs",
-              "ViewState": "AgIAADcEAAAAAAAAAAAAwGEEAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAO4HAAAAAAAAAAAAwBgIAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T10:46:02.444Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TarjetaService.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\TarjetaService.cs",
-              "RelativeDocumentMoniker": "Services\\TarjetaService.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\TarjetaService.cs",
-              "RelativeToolTip": "Services\\TarjetaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T10:49:04.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmEditarUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmEditarUsuario.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmEditarUsuario.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmEditarUsuario.cs",
-              "RelativeToolTip": "Forms\\Admin\\FrmEditarUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T17:32:02.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmEditarUsuario.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmEditarUsuario.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmEditarUsuario.Designer.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmEditarUsuario.Designer.cs",
-              "RelativeToolTip": "Forms\\Admin\\FrmEditarUsuario.Designer.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAE0AAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T18:30:38.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DatabaseConfig.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\DatabaseConfig.cs",
-              "RelativeDocumentMoniker": "Services\\DatabaseConfig.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\DatabaseConfig.cs",
-              "RelativeToolTip": "Services\\DatabaseConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T18:56:25.81Z"
+              "WhenOpened": "2026-05-14T18:33:44.207Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\UsuarioService.cs",
-              "RelativeDocumentMoniker": "Services\\UsuarioService.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\UsuarioService.cs",
-              "RelativeToolTip": "Services\\UsuarioService.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAADwv+gAAAAJAAAAAAAAAA==",
+              "Title": "FrmDashboardUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmDashboardUsuario.cs",
+              "RelativeDocumentMoniker": "Forms\\Principal\\FrmDashboardUsuario.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmDashboardUsuario.cs",
+              "RelativeToolTip": "Forms\\Principal\\FrmDashboardUsuario.cs",
+              "ViewState": "AgIAAHcEAAAAAAAAAAAAAIUEAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T11:50:40.943Z"
+              "WhenOpened": "2026-05-14T18:20:07.487Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Tarjeta.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\Tarjeta.cs",
-              "RelativeDocumentMoniker": "Models\\Tarjeta.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\Tarjeta.cs",
-              "RelativeToolTip": "Models\\Tarjeta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T10:47:23.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FrmAbrirCuenta.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Cuentas\\FrmAbrirCuenta.cs",
-              "RelativeDocumentMoniker": "Forms\\Cuentas\\FrmAbrirCuenta.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Cuentas\\FrmAbrirCuenta.cs",
-              "RelativeToolTip": "Forms\\Cuentas\\FrmAbrirCuenta.cs",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAkwPEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T10:42:15.862Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CuentaService.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\CuentaService.cs",
-              "RelativeDocumentMoniker": "Services\\CuentaService.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\CuentaService.cs",
-              "RelativeToolTip": "Services\\CuentaService.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAkwJoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T10:53:20.234Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 7,
               "Title": "CuentaBancaria.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\CuentaBancaria.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\CuentaBancaria.cs",
               "RelativeDocumentMoniker": "Models\\CuentaBancaria.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\CuentaBancaria.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\CuentaBancaria.cs",
               "RelativeToolTip": "Models\\CuentaBancaria.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwFYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAA5wGQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-28T11:02:30.785Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\Usuario.cs",
-              "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAcwI4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "MovimientoService.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\MovimientoService.cs",
+              "RelativeDocumentMoniker": "Services\\MovimientoService.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\MovimientoService.cs",
+              "RelativeToolTip": "Services\\MovimientoService.cs",
+              "ViewState": "AgIAAG8BAAAAAAAAAAAkwJsBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T11:05:28.036Z"
+              "WhenOpened": "2026-05-14T20:18:08.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CuentaService.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\CuentaService.cs",
+              "RelativeDocumentMoniker": "Services\\CuentaService.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\CuentaService.cs",
+              "RelativeToolTip": "Services\\CuentaService.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAYwLsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T10:53:20.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VistaPagarServicios.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\VistaPagarServicios.cs",
+              "RelativeDocumentMoniker": "Views\\VistaPagarServicios.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\VistaPagarServicios.cs",
+              "RelativeToolTip": "Views\\VistaPagarServicios.cs",
+              "ViewState": "AgIAANkBAAAAAAAAAAAkwAUCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T19:52:10.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VistaAnalizarGastos.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\VistaAnalizarGastos.cs",
+              "RelativeDocumentMoniker": "Views\\VistaAnalizarGastos.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\VistaAnalizarGastos.cs",
+              "RelativeToolTip": "Views\\VistaAnalizarGastos.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAGcAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T19:37:43.571Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "VistaDividirCuenta.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\VistaDividirCuenta.cs",
+              "RelativeDocumentMoniker": "Views\\VistaDividirCuenta.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\VistaDividirCuenta.cs",
+              "RelativeToolTip": "Views\\VistaDividirCuenta.cs",
+              "ViewState": "AgIAAB8BAAAAAAAAAAAQwEMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T19:54:46.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "UC_Inicio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\UC_Inicio.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\UC_Inicio.cs",
               "RelativeDocumentMoniker": "Views\\UC_Inicio.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Views\\UC_Inicio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Views\\UC_Inicio.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\UC_Inicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\UC_Inicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T11:12:04.741Z"
+              "WhenOpened": "2026-05-14T18:33:41.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "FrmGestionTransferencias.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionTransferencias.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmGestionTransferencias.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionTransferencias.cs",
-              "RelativeToolTip": "Forms\\Admin\\FrmGestionTransferencias.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAA3wIIAAAABAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "TarjetaService.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\TarjetaService.cs",
+              "RelativeDocumentMoniker": "Services\\TarjetaService.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\TarjetaService.cs",
+              "RelativeToolTip": "Services\\TarjetaService.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAAwKMAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T17:17:28.327Z"
+              "WhenOpened": "2026-05-14T18:21:00.32Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FrmAbrirCuenta.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Cuentas\\FrmAbrirCuenta.cs",
-              "RelativeDocumentMoniker": "Forms\\Cuentas\\FrmAbrirCuenta.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Cuentas\\FrmAbrirCuenta.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Cuentas\\FrmAbrirCuenta.cs [Dise\u00F1o]",
+              "DocumentIndex": 15,
+              "Title": "Tarjeta.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\Tarjeta.cs",
+              "RelativeDocumentMoniker": "Models\\Tarjeta.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\Tarjeta.cs",
+              "RelativeToolTip": "Models\\Tarjeta.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T10:40:47.736Z"
+              "WhenOpened": "2026-05-14T18:20:48.53Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FrmCancelarCuentas.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmCancelarCuentas.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmCancelarCuentas.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmCancelarCuentas.cs",
-              "RelativeToolTip": "Forms\\Admin\\FrmCancelarCuentas.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAswLsAAAABAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "VistaTarjetas.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\VistaTarjetas.cs",
+              "RelativeDocumentMoniker": "Views\\VistaTarjetas.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Views\\VistaTarjetas.cs",
+              "RelativeToolTip": "Views\\VistaTarjetas.cs",
+              "ViewState": "AgIAAP4BAAAAAAAAAAAuwCICAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T17:17:09.131Z"
+              "WhenOpened": "2026-05-14T18:18:07.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FrmDashboardUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmDashboardUsuario.cs",
-              "RelativeDocumentMoniker": "Forms\\Principal\\FrmDashboardUsuario.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmDashboardUsuario.cs",
-              "RelativeToolTip": "Forms\\Principal\\FrmDashboardUsuario.cs",
-              "ViewState": "AgIAAB4DAAAAAAAAAAAjwDIDAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T10:42:25.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FrmDetalleCuenta.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Cuentas\\FrmDetalleCuenta.cs",
-              "RelativeDocumentMoniker": "Forms\\Cuentas\\FrmDetalleCuenta.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Cuentas\\FrmDetalleCuenta.cs",
-              "RelativeToolTip": "Forms\\Cuentas\\FrmDetalleCuenta.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAAwAkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T10:40:52.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FrmMisCuentas.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Cuentas\\FrmMisCuentas.cs",
-              "RelativeDocumentMoniker": "Forms\\Cuentas\\FrmMisCuentas.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Cuentas\\FrmMisCuentas.cs",
-              "RelativeToolTip": "Forms\\Cuentas\\FrmMisCuentas.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAYwNEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T10:41:12.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "FrmReportesAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmReportesAdmin.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmReportesAdmin.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmReportesAdmin.cs",
-              "RelativeToolTip": "Forms\\Admin\\FrmReportesAdmin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T11:50:14.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FrmDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmDashboard.cs",
-              "RelativeDocumentMoniker": "Forms\\Principal\\FrmDashboard.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmDashboard.cs",
-              "RelativeToolTip": "Forms\\Principal\\FrmDashboard.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T10:49:31.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "FrmDashboardUsuario.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmDashboardUsuario.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\Principal\\FrmDashboardUsuario.Designer.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmDashboardUsuario.Designer.cs",
-              "RelativeToolTip": "Forms\\Principal\\FrmDashboardUsuario.Designer.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T10:39:12.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "FrmDashboardUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmDashboardUsuario.cs",
-              "RelativeDocumentMoniker": "Forms\\Principal\\FrmDashboardUsuario.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmDashboardUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmDashboardUsuario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T10:42:33.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "FrmGestionTarjeta.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionTarjeta.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmGestionTarjeta.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionTarjeta.cs",
-              "RelativeToolTip": "Forms\\Admin\\FrmGestionTarjeta.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAkwIMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T17:16:49.021Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FrmGestionUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionUsuarios.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmGestionUsuarios.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionUsuarios.cs",
-              "RelativeToolTip": "Forms\\Admin\\FrmGestionUsuarios.cs",
-              "ViewState": "AgIAAOIAAAAAAAAAAAAkwA4BAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T17:35:27.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "FrmNuevoUsuario.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmNuevoUsuario.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmNuevoUsuario.Designer.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmNuevoUsuario.Designer.cs",
-              "RelativeToolTip": "Forms\\Admin\\FrmNuevoUsuario.Designer.cs",
-              "ViewState": "AgIAANIAAAAAAAAAAAAkwP4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T18:28:25.053Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "NexumDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Data\\NexumDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\NexumDbContext.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Data\\NexumDbContext.cs",
-              "RelativeToolTip": "Data\\NexumDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T19:36:01.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "BaseService.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\BaseService.cs",
-              "RelativeDocumentMoniker": "Services\\BaseService.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\BaseService.cs",
-              "RelativeToolTip": "Services\\BaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAkwCwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T19:39:56.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "FrmAdminDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmAdminDashboard.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmAdminDashboard.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmAdminDashboard.cs",
-              "RelativeToolTip": "Forms\\Admin\\FrmAdminDashboard.cs",
-              "ViewState": "AgIAAPsBAAAAAAAAAAAkwCcCAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T18:15:54.042Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "EstadisticasService.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Services\\EstadisticasService.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Services\\EstadisticasService.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Services\\EstadisticasService.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Services\\EstadisticasService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAkwDsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T18:53:45.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "FrmNuevoUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmNuevoUsuario.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmNuevoUsuario.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmNuevoUsuario.cs",
-              "RelativeToolTip": "Forms\\Admin\\FrmNuevoUsuario.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA3wDUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T18:11:11.144Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "FrmLogin.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Auth\\FrmLogin.cs",
-              "RelativeDocumentMoniker": "Forms\\Auth\\FrmLogin.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Auth\\FrmLogin.cs",
-              "RelativeToolTip": "Forms\\Auth\\FrmLogin.cs",
-              "ViewState": "AgIAAOEBAAAAAAAAAAAkwA0CAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T18:17:03.19Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "FrmGestionUsuarios.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionUsuarios.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmGestionUsuarios.Designer.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionUsuarios.Designer.cs",
-              "RelativeToolTip": "Forms\\Admin\\FrmGestionUsuarios.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T18:09:04.617Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "FrmOpcionesAyuda.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmOpcionesAyuda.cs",
-              "RelativeDocumentMoniker": "Forms\\Principal\\FrmOpcionesAyuda.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmOpcionesAyuda.cs",
-              "RelativeToolTip": "Forms\\Principal\\FrmOpcionesAyuda.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAowGQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:13:56.779Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "FrmMisTicketsSimple.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Tickets\\FrmMisTicketsSimple.cs",
-              "RelativeDocumentMoniker": "Forms\\Tickets\\FrmMisTicketsSimple.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Tickets\\FrmMisTicketsSimple.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Tickets\\FrmMisTicketsSimple.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:15:05.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "FrmCrearTicketSimple.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Tickets\\FrmCrearTicketSimple.cs",
-              "RelativeDocumentMoniker": "Forms\\Tickets\\FrmCrearTicketSimple.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Tickets\\FrmCrearTicketSimple.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Tickets\\FrmCrearTicketSimple.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:15:30.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "FrmMisTicketsSimple.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Tickets\\FrmMisTicketsSimple.cs",
-              "RelativeDocumentMoniker": "Forms\\Tickets\\FrmMisTicketsSimple.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Tickets\\FrmMisTicketsSimple.cs",
-              "RelativeToolTip": "Forms\\Tickets\\FrmMisTicketsSimple.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwCsAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:11:40.821Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "FrmOpcionesAyuda.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmOpcionesAyuda.cs",
-              "RelativeDocumentMoniker": "Forms\\Principal\\FrmOpcionesAyuda.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmOpcionesAyuda.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmOpcionesAyuda.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:17:31.612Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "FrmContactoDirecto.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmContactoDirecto.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmContactoDirecto.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmContactoDirecto.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmContactoDirecto.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:31:55.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "FrmContactoDirecto.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmContactoDirecto.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmContactoDirecto.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmContactoDirecto.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Principal\\FrmContactoDirecto.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:34:22.405Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "AdminTicketService.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\AdminTicketService.cs",
-              "RelativeDocumentMoniker": "Services\\AdminTicketService.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Services\\AdminTicketService.cs",
-              "RelativeToolTip": "Services\\AdminTicketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T11:19:54.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "FrmGestionTickets.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionTickets.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmGestionTickets.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionTickets.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmGestionTickets.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T11:39:54.321Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "SesionActual.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\SesionActual.cs",
-              "RelativeDocumentMoniker": "Models\\SesionActual.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Models\\SesionActual.cs",
-              "RelativeToolTip": "Models\\SesionActual.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAcwHcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T11:42:45.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "FrmReportesAdmin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmReportesAdmin.cs",
-              "RelativeDocumentMoniker": "Forms\\Admin\\FrmReportesAdmin.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmReportesAdmin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\NexumApp-V1\\NexumApp-V1\\NexumApp\\Forms\\Admin\\FrmReportesAdmin.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T11:55:36.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 16,
               "Title": "AppSettings.cs",
-              "DocumentMoniker": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Helpers\\AppSettings.cs",
+              "DocumentMoniker": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Helpers\\AppSettings.cs",
               "RelativeDocumentMoniker": "Helpers\\AppSettings.cs",
-              "ToolTip": "C:\\Users\\diana\\Downloads\\NexumApp-V1_final (2)\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Helpers\\AppSettings.cs",
+              "ToolTip": "C:\\Users\\diana\\Desktop\\DAM_25-26_NEXUM_BANK\\NexumApp-V1_final\\NexumApp-V1_final\\NexumApp-V1\\NexumApp\\Helpers\\AppSettings.cs",
               "RelativeToolTip": "Helpers\\AppSettings.cs",
               "ViewState": "AgIAAH4AAAAAAAAAAAAAAKQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

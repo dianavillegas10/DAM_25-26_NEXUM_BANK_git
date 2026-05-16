@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace NexumApp.Models
@@ -82,5 +83,18 @@ namespace NexumApp.Models
         /// Colección de transferencias enviadas desde esta cuenta.
         /// </summary>
         public virtual ICollection<Transferencia> TransferenciasEnviadas { get; set; }
+
+        public string DisplayText
+        {
+            get
+            {
+                // Muestra: "TipoCuenta • ••••1234 - $1,234.56"
+                string numeroOculto = string.IsNullOrEmpty(NumeroCuenta)
+                    ? "0000"
+                    : NumeroCuenta.Substring(Math.Max(0, NumeroCuenta.Length - 4));
+
+                return $"{TipoCuenta} • ••••{numeroOculto} - {Saldo:C}";
+            }
+        }
     }
 }

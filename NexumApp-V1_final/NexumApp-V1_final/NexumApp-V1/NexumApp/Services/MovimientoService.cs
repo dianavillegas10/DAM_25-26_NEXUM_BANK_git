@@ -23,6 +23,94 @@ namespace NexumApp.Services
         }
 
         // =========================================================
+        // 💳 PAGO DE SERVICIOS (VERSIÓN CORREGIDA - ÚNICA)
+        // =========================================================
+        public bool RegistrarPagoServicio(int cuentaId, decimal importe, string servicio, string compañia, out string error)
+        {
+            error = string.Empty;
+
+            if (importe <= 0)
+            {
+                error = "El importe debe ser mayor que cero.";
+                return false;
+            }
+
+            try
+            {
+                using (var conn = new MySqlConnection(ConnectionString))
+                {
+                    conn.Open();
+                    using (var trans = conn.BeginTransaction())
+                    {
+                        decimal saldoAnterior;
+
+                        // 1. Obtener saldo actual de la cuenta
+                        using (var cmd = new MySqlCommand("SELECT Saldo FROM cuentas_bancarias WHERE Id = @cuentaId", conn, trans))
+                        {
+                            cmd.Parameters.AddWithValue("@cuentaId", cuentaId);
+                            var resultado = cmd.ExecuteScalar();
+
+                            if (resultado == null)
+                            {
+                                error = "Cuenta no encontrada.";
+                                return false;
+                            }
+
+                            saldoAnterior = Convert.ToDecimal(resultado);
+                        }
+
+                        // 2. Verificar saldo suficiente
+                        if (saldoAnterior < importe)
+                        {
+                            error = $"Saldo insuficiente. Saldo actual: {saldoAnterior:C}";
+                            return false;
+                        }
+
+                        decimal saldoNuevo = saldoAnterior - importe;
+                        string concepto = $"Pago de {servicio} - {compañia}";
+
+                        // 3. Insertar el movimiento (GASTO)
+                        using (var cmd = new MySqlCommand(@"
+                            INSERT INTO movimientos (CuentaId, TipoMovimiento, Monto, Fecha, Concepto, SaldoAnterior, SaldoPosterior)
+                            VALUES (@cuentaId, @tipo, @monto, NOW(), @concepto, @saldoAnterior, @saldoNuevo)", conn, trans))
+                        {
+                            cmd.Parameters.AddWithValue("@cuentaId", cuentaId);
+                            cmd.Parameters.AddWithValue("@tipo", "Gasto");
+                            cmd.Parameters.AddWithValue("@monto", importe);
+                            cmd.Parameters.AddWithValue("@concepto", concepto);
+                            cmd.Parameters.AddWithValue("@saldoAnterior", saldoAnterior);
+                            cmd.Parameters.AddWithValue("@saldoNuevo", saldoNuevo);
+                            cmd.ExecuteNonQuery();
+                        }
+
+                        // 4. ACTUALIZAR EL SALDO DE LA CUENTA (¡PARTE CLAVE!)
+                        using (var cmd = new MySqlCommand("UPDATE cuentas_bancarias SET Saldo = @saldoNuevo WHERE Id = @cuentaId", conn, trans))
+                        {
+                            cmd.Parameters.AddWithValue("@saldoNuevo", saldoNuevo);
+                            cmd.Parameters.AddWithValue("@cuentaId", cuentaId);
+                            int filasAfectadas = cmd.ExecuteNonQuery();
+
+                            if (filasAfectadas == 0)
+                            {
+                                error = "No se pudo actualizar el saldo de la cuenta.";
+                                return false;
+                            }
+                        }
+
+                        trans.Commit();
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+                System.Diagnostics.Debug.WriteLine($"Error en RegistrarPagoServicio: {ex.Message}");
+                return false;
+            }
+        }
+
+        // =========================================================
         // 🔍 MOVIMIENTOS RECIENTES
         // =========================================================
         public List<Movimiento> ObtenerMovimientosRecientesPorUsuario(int usuarioId, int limite = 10)
@@ -35,7 +123,6 @@ namespace NexumApp.Services
                 {
                     conn.Open();
 
-                    // MySQL no soporta parámetros en LIMIT; limite viene del código y se valida
                     int limitVal = Math.Max(1, Math.Min(limite, 100));
                     string query = $@"SELECT m.Id, m.CuentaId, m.TipoMovimiento, m.Monto, m.Fecha, m.Concepto, m.SaldoAnterior, m.SaldoPosterior
                                     FROM movimientos m
@@ -70,7 +157,7 @@ namespace NexumApp.Services
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Error MovimientoService: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Error ObtenerMovimientosRecientesPorUsuario: {ex.Message}");
             }
 
             return lista;
@@ -170,7 +257,7 @@ namespace NexumApp.Services
         }
 
         // =========================================================
-        // 💸 TRANSFERENCIA (NUEVO 🔥)
+        // 💸 TRANSFERENCIA
         // =========================================================
         public bool RealizarTransferencia(int cuentaOrigenId, string cuentaDestino, decimal importe, string concepto)
         {
@@ -192,7 +279,7 @@ namespace NexumApp.Services
         }
 
         // =========================================================
-        // 🔧 MÉTODOS AUXILIARES (PRO)
+        // 🔧 MÉTODOS AUXILIARES
         // =========================================================
         private void InsertarMovimiento(MySqlConnection conn, MySqlTransaction trans,
             int cuentaId, string tipo, decimal monto, string concepto,
@@ -226,7 +313,7 @@ namespace NexumApp.Services
         }
 
         // =========================================================
-        // 📊 RESUMEN MENSUAL (Ingresos y Gastos del mes actual)
+        // 📊 RESUMEN MENSUAL
         // =========================================================
         public (decimal Ingresos, decimal Gastos) ObtenerResumenMensual(int usuarioId)
         {
@@ -283,7 +370,6 @@ namespace NexumApp.Services
                 {
                     conn.Open();
 
-                    // MySQL no soporta parámetros en LIMIT; limite viene del código y se valida
                     int limitVal = Math.Max(1, Math.Min(limite, 200));
                     string query = $@"SELECT m.Id, m.CuentaId, m.TipoMovimiento, m.Monto, m.Fecha, m.Concepto, m.SaldoAnterior, m.SaldoPosterior
                                     FROM movimientos m
@@ -317,7 +403,7 @@ namespace NexumApp.Services
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Error MovimientoService: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Error ObtenerMovimientosPorCuenta: {ex.Message}");
             }
 
             return lista;

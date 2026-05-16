@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static NexumApp.Helpers.DashboardLayout;
 
+
+
 namespace NexumApp.Forms.Principal
 {
     public partial class FrmDashboardUsuario : Form
@@ -774,6 +776,7 @@ namespace NexumApp.Forms.Principal
             } // cierre using pen + brush
         }
 
+      
         private void OnSidebarClick(int idx)
         {
             if (idx == 0) { MostrarVistaInicio(); return; }

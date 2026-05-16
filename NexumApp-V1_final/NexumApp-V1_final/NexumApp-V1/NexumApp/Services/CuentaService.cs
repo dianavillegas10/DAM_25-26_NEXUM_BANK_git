@@ -106,6 +106,28 @@ namespace NexumApp.Services
             return null;
         }
 
+        public decimal ObtenerSaldoCuenta(int cuentaId)
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(ConnectionString))
+                {
+                    conn.Open();
+                    using (var cmd = new MySqlCommand("SELECT Saldo FROM cuentas_bancarias WHERE Id = @id", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@id", cuentaId);
+                        var resultado = cmd.ExecuteScalar();
+                        return resultado != null ? Convert.ToDecimal(resultado) : 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error ObtenerSaldoCuenta: {ex.Message}");
+                return 0;
+            }
+        }
+
         /// <summary>
         /// Obtiene una cuenta bancaria por su número de cuenta.
         /// </summary>
